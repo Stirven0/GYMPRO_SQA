@@ -48,9 +48,7 @@
 - Fuentes: Space Grotesk + Orbitron
 - Responsive (sidebar se oculta en <700px)
 
-
-
-
+---
 
 ## 6. Resumen de Seguridad
 - No hay registro público (/register, /signup devuelven 404)
