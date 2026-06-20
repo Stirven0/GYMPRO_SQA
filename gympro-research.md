@@ -50,17 +50,7 @@
 
 
 
-## 5. Repositorios Relacionados
-- **katy1609/gympro-management-system** (GitHub)
-  - Flask + SQLite + HTML/CSS/JS
-  - Default login: `admin / admin123`
-  - Planes: Monthly ₹999, Quarterly ₹2,499, Yearly ₹7,999
-  - Features: Dashboard, Members, Plans, Attendance, Payments
 
-- **IrisFernandaAmorim/GymPro_BackEnd** (GitHub)
-  - Backend para GymPro
-
----
 
 ## 6. Resumen de Seguridad
 - No hay registro público (/register, /signup devuelven 404)
