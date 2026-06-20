@@ -30,6 +30,7 @@ El plan de pruebas se estructurará evaluando las siguientes características de
 | **Compatibilidad** | Asegurar el despliegue óptimo en múltiples navegadores (Chrome, Firefox, Safari) y plataformas (Móvil, Desktop). | Pruebas de Despliegue / Configuración en el Cliente. |
 | **Fiabilidad** | Garantizar la estabilidad del sistema y el comportamiento del pool de conexiones a la base de datos (SQLite). | Pruebas de Sanidad y Confiabilidad. |
 | **Mantenibilidad** | Validar la limpieza, modularidad y legibilidad del código de Flask para facilitar futuros cambios. | Revisiones Técnicas Formales (RTF). |
+| **Portabilidad** | Verificar que el sistema se despliega correctamente en Railway y funciona en múltiples navegadores. | Pruebas de Despliegue / Configuración. |
 
 ---
 
@@ -43,11 +44,10 @@ Seguiremos un enfoque incremental "de adentro hacia afuera" estructurado en cuat
 
 ### Fase 1: Pruebas Unitarias (Bajo Nivel)
 *   **Foco:** Validar unidades individuales de código de forma aislada.
-*   **Componentes Críticos:**
+*   **Nota:** Requiere acceso al código fuente del backend Flask. Sin él, esta fase no puede ejecutarse contra la URL desplegada. Si se obtiene el repositorio, aplicar:
     *   *Backend Flask:* Lógica de cálculo de membresías y vigencias.
     *   *Módulo CAPTCHA:* Algoritmo de generación y validación de la suma matemática aleatoria.
-*   **Herramientas:** `unittest` o `pytest` (Python).
-*   **Uso de Sobrecarga:** Se construirán controladores de prueba en Python para automatizar el envío de datos a las funciones y evaluar las aserciones.
+    *   **Herramientas:** `pytest` (Python).
 
 ### Fase 2: Pruebas de Integración (Capa de Comunicación)
 *   **Foco:** Verificar la comunicación y flujo de datos entre la interfaz del cliente, las APIs de Flask y la base de datos SQLite.
@@ -95,15 +95,30 @@ Aplicaremos los pasos de Pressman para el entorno web de GymPro:
 
 ---
 
+### Estado de Instalación en el Entorno Actual
+
+| Herramienta | Estado | Acción requerida |
+|---|---|---|
+| `curl` | ✅ Listo | Ninguna |
+| Python `requests` | ✅ Listo | Ninguna |
+| Python `pytest` | ❌ No instalado | `pip install pytest` |
+| Python `selenium` | ❌ No instalado | `pip install selenium` |
+| Newman | ❌ No instalado | `npm install -g newman` |
+| JMeter | ❌ No instalado | Descargar e instalar |
+| OWASP ZAP | ❌ No instalado | Descargar e instalar |
+
+**Nota:** `curl` y Python `requests` están listos para usar de inmediato sin instalación adicional.
+
 ## 5. Herramientas y Ambiente de QA
 
 | Propósito | Herramienta Seleccionada | Entorno / Scripting |
 | :--- | :--- | :--- |
-| **Pruebas Unitarias** | `pytest` (Python) | Entorno local de desarrollo. |
-| **Pruebas de API e Integración** | Postman / Newman | Colecciones de peticiones HTTP automatizadas. |
+| **Pruebas de API rápidas / exploratorias** | `curl` + Python `requests` | Terminal / scripts ligeros sin instalación adicional. |
+| **Pruebas Unitarias** | `pytest` (Python) | Solo si se obtiene acceso al código fuente. |
+| **Pruebas de API e Integración** | Postman / Newman | Colecciones de peticiones HTTP automatizadas (instalar via npm). |
 | **Pruebas de UI, Navegación y E2E**| Selenium WebDriver | Scripts en Python con capturas automáticas. |
-| **Pruebas de Rendimiento y Carga** | Apache JMeter | Simulación de hilos concurrentes. |
-| **Pruebas de Seguridad** | OWASP ZAP | Escaneo dinámico y análisis de vulnerabilidades. |
+| **Pruebas de Rendimiento y Carga** | Apache JMeter | Simulación de hilos concurrentes (Java requerido). |
+| **Pruebas de Seguridad** | OWASP ZAP | Escaneo dinámico y análisis de vulnerabilidades (Java requerido). |
 | **Gestión de Incidencias / Defectos**| GitHub Issues / Markdown | Registro formal en `~/QA/reporte_defectos.md`. |
 
 ---
