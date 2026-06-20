@@ -133,7 +133,7 @@ Para garantizar que el informe final de pruebas cuente con el respaldo visual ex
     *   *Control 2:* Resolución de la suma del CAPTCHA matemático (`captcha_resuelto.png`).
     *   *Control 3:* Entrada exitosa a la página `/inicio` tras autenticación (`login_exitoso.png`).
     *   *Control 4:* Captura de fallos en caso de que alguna aserción no se cumpla (`fallo_[nombre_de_prueba].png`).
-3.  **Captura de Pruebas de API/Rendimiento:** Capturas de pantalla de la interfaz de Postman y de los reportes gráficos de JMeter (Response Time Graph) se guardarán manualmente en el mismo directorio.
+3.  **Captura de Pruebas de API/Rendimiento:** Capturas de pantalla de la terminal (curl/requests), Postman y reportes gráficos de JMeter (Response Time Graph) se guardarán en `evidencias/` con nombres descriptivos (ej. `login_api_200.png`, `jmeter_grafica_rendimiento.png`).
 4.  **Integración en el Reporte:** Las imágenes se enlazarán en el reporte final en Markdown para su fácil visualización.
 
 ---
