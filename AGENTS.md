@@ -39,6 +39,13 @@ Repositorio de documentación (solo markdown, sin código ejecutable) sobre **As
 - **Herramientas de prueba referenciadas:** pytest, Postman/Newman, Selenium WebDriver (Python), JMeter, OWASP ZAP.
 - **Gestión de defectos:** se registran en `~/QA/reporte_defectos.md` (formato Markdown).
 
+## Entorno de pruebas
+
+- **Virtual env:** `.venv/` — activar con `source .venv/bin/activate`
+- Paquetes instalados: `pytest`, `selenium`, `requests`
+- `curl` disponible en el sistema
+- Para Newman: `npm install -g newman`
+
 ## Estado del repositorio
 
 - Commit inicial realizado (`9e96294`). Rama: `main`.
