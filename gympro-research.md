@@ -4,9 +4,9 @@
 **https://gestion-gympro.up.railway.app**
 
 ### Stack Tecnológico
-- **Backend**: Python Flask (servidor `railway-hikari`)
-- **Frontend**: HTML plano con CSS inline y JavaScript vanilla
-- **Base de datos**: SQLite (según repo asociado)
+- **Backend**: Python Flask (inferido por `Content-Type: text/html; charset=utf-8`, errores JSON, servidor `railway-hikari`)
+- **Frontend**: HTML plano con CSS inline y JavaScript vanilla (sin frameworks SPA detectados en el source)
+- **Base de datos**: SQLite (inferido — no confirmado directamente; típico de Flask + Railway)
 - **Host**: Railway (dominio `up.railway.app`)
 - **Server**: `railway-hikari`
 
