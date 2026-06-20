@@ -46,7 +46,7 @@ Repositorio de documentación (solo markdown, sin código ejecutable) sobre **As
 - `curl` disponible en el sistema
 - **Newman:** `npm install -g newman` (versión 6.2.2 instalada)
 - **JMeter:** `/opt/jmeter` (versión 5.6.3 instalada)
-- **ZAP:** pendiente de instalar (descarga ~200MB)
+- **ZAP:** `/opt/ZAP_2.17.0` (instalado)
 
 ## Estado del repositorio
 
