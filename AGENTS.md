@@ -14,6 +14,7 @@ Repositorio de documentación (solo markdown, sin código ejecutable) sobre **As
 | **Caso práctico: GymPro** | `gympro-research.md`, `hallazgos_gympro.md`, `plan_de_pruebas_gympro.md`, `DOC-20260609-WA0062-contenido.md` |
 | **Plantillas evaluación** | `plantilla_evaluacion_iso25010.md` (adaptación ISO 25010) |
 | **Referencia externa** | `informe_pruebas_automatizadas.md` (informe de otro proyecto — e-commerce, no GymPro) |
+| **Gestión** | `reporte_defectos.md`, `evidencias/` |
 
 ## Sistema bajo prueba (GymPro)
 
@@ -41,5 +42,6 @@ Repositorio de documentación (solo markdown, sin código ejecutable) sobre **As
 
 ## Estado del repositorio
 
-- Sin commits aún (repo vacío). No hay ramas ni remotos configurados.
+- Commit inicial realizado (`9e96294`). Rama: `main`.
+- Sin remoto configurado aún.
 - No hay README.md — crearlo si se necesita documentar el repositorio.
