@@ -19,7 +19,6 @@ Repositorio de documentación (solo markdown, sin código ejecutable) sobre **As
 ## Sistema bajo prueba (GymPro)
 
 - **URL bajo prueba:** `https://gestion-gympro.up.railway.app` — Flask + SQLite + HTML/JS vanilla
-- **Repo relacionado:** `katy1609/gympro-management-system` (GitHub)
 
 ### Credenciales de prueba (del informe académico)
 
