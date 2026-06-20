@@ -6,7 +6,7 @@ Repositorio de documentación SQA para el proyecto **GymPro** (`https://gestion-
 
 | Área | Archivos |
 |------|----------|
-| Teoría SQA (Pressman caps. 16–20) | `pressman_cap*_resumen.md`, `pressman_sqa_resumen.md` |
+| Teoría SQA (Pressman caps. 16–20) | `pressman_cap*_resumen.md` |
 | Estándares | `estandares_calidad_software.md`, `plantilla_evaluacion_iso25010.md` |
 | Material de clase | `calidad_software_unidad_01.md`, `conceptos_pruebas_software.md`, `pruebas_software_slides.md`, `concepto_calidad_software.md` |
 | Caso GymPro | `gympro-research.md`, `hallazgos_gympro.md`, `plan_de_pruebas_gympro.md`, `DOC-20260609-WA0062-contenido.md` |

@@ -8,7 +8,7 @@ Repositorio de documentación (solo markdown, sin código ejecutable) sobre **As
 
 | Área | Archivos |
 |------|----------|
-| **Teoría SQA (Pressman caps. 16–20)** | `pressman_cap17_resumen.md`, `pressman_cap18_resumen.md`, `pressman_cap20_resumen.md`, `pressman_index_summary.md`, `pressman_sqa_resumen.md` (cap. 16) |
+| **Teoría SQA (Pressman caps. 16–20)** | `pressman_cap16_resumen.md`, `pressman_cap17_resumen.md`, `pressman_cap18_resumen.md`, `pressman_cap20_resumen.md`, `pressman_index_summary.md`, `pressman_sqa_resumen.md` |
 | **Estándares** | `estandares_calidad_software.md` (ISO/IEC 25010 SQuaRE) |
 | **Material de clase** | `calidad_software_unidad_01.md`, `conceptos_pruebas_software.md`, `pruebas_software_slides.md`, `concepto_calidad_software.md` |
 | **Caso práctico: GymPro** | `gympro-research.md`, `hallazgos_gympro.md`, `plan_de_pruebas_gympro.md`, `DOC-20260609-WA0062-contenido.md` |
