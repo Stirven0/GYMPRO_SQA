@@ -1,0 +1,2796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1031" it="0" lt="1028" ct="0" ts="1781993967280" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="507" sby="0" ng="4" na="4">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:28 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8A.FhN3JnH0d5YDnNKhBqnf9baOGzc; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: 9q01vsyOQN-xtrxa9I3ezw
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="1710" it="0" lt="1710" ct="0" ts="1781993966811" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="507" sby="0" ng="4" na="4">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:28 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8A.FhN3JnH0d5YDnNKhBqnf9baOGzc; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: tJQmFfHfRb6arBftnpoFkQ
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="1006" it="0" lt="1006" ct="0" ts="1781993967778" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="507" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:28 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8A.FhN3JnH0d5YDnNKhBqnf9baOGzc; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: _7YUJlb6RHKajwfnLPU1MQ
+Content-Length: 39
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="453" it="0" lt="453" ct="0" ts="1781993968332" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="3454" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:28 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: 96pTcoS9T8-qn_ZR2prcFg
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="310" it="0" lt="310" ct="0" ts="1781993968788" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="2033" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:28 GMT
+Server: railway-hikari
+x-railway-request-id: Uas7-PoIRL2nqrvZLPU1MQ
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="576" it="0" lt="576" ct="0" ts="1781993968523" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="3454" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:28 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: QZTOH4R9S-2NFGHUlt7tkg
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="312" it="0" lt="312" ct="0" ts="1781993968787" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="3454" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: Xtc-sGsHTDKmtHXQY53eZw
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="821" it="0" lt="821" ct="0" ts="1781993968278" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="507" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:28 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8A.FhN3JnH0d5YDnNKhBqnf9baOGzc; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: zkvIxbYCRiylbYrU9I3ezw
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="218" it="0" lt="218" ct="0" ts="1781993969100" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="789" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+x-railway-request-id: AA1reP9UQHaw6LTu9I3ezw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="233" it="0" lt="233" ct="0" ts="1781993969101" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="2033" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+x-railway-request-id: WrmjCiV5SvmNfOEK9I3ezw
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="250" it="0" lt="250" ct="0" ts="1781993969103" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="3454" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: 5-FWbtaXSbevbZ0SLPU1MQ
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="266" it="0" lt="266" ct="0" ts="1781993969102" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="2033" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+x-railway-request-id: UoSxRofXRzOqZPcRlt7tkg
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="819" it="0" lt="819" ct="0" ts="1781993968778" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="507" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8Q.okgPvw_UJEnvKmPdh4XvT1brQcM; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: bISODcGyRGu4zZOmY53eZw
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="301" it="0" lt="301" ct="0" ts="1781993969320" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="3328" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+x-railway-request-id: kvp_lEDyQgWBSfekY53eZw
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="302" it="0" lt="302" ct="0" ts="1781993969337" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="789" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+x-railway-request-id: SCx3hiFNRpmv_8YZ-_9nXA
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="295" it="0" lt="295" ct="0" ts="1781993969356" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="2033" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+x-railway-request-id: lwtkQTG0TzywQoWqjq4OvQ
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="287" it="0" lt="287" ct="0" ts="1781993969370" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="789" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+x-railway-request-id: -ZsOqs3cTuOFC6Jq-_9nXA
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="695" it="0" lt="695" ct="0" ts="1781993969277" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="507" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8Q.okgPvw_UJEnvKmPdh4XvT1brQcM; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: fK26wK9GS_GvgWfNljLL4A
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="385" it="0" lt="385" ct="0" ts="1781993969599" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="3454" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:29 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: ngGowXBYTBK_vmq49I3ezw
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="596" it="0" lt="596" ct="0" ts="1781993969623" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="507" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8g.3zybZmutbuOsc-P3pt8x8eFpIJI; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: vtBAD4ehTNSOPYywljLL4A
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="635" it="0" lt="635" ct="0" ts="1781993969640" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="3328" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+x-railway-request-id: z-hkooGpRwivaQtJY53eZw
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="633" it="0" lt="633" ct="0" ts="1781993969652" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="789" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+x-railway-request-id: brcqfALxQzOC8x8W2prcFg
+Content-Length: 514
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="648" it="0" lt="648" ct="0" ts="1781993969658" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="3328" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+x-railway-request-id: eWbP_5GsTi6BewZLWUN5dQ
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="344" it="0" lt="344" ct="0" ts="1781993969973" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="3454" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: npGey4UATCKNExqInpoFkQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="345" it="0" lt="345" ct="0" ts="1781993969986" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="2033" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+x-railway-request-id: cAH8zUaxTfKMLJikljLL4A
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="795" it="0" lt="795" ct="0" ts="1781993969776" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="507" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8g.3zybZmutbuOsc-P3pt8x8eFpIJI; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: tQKNKsJ8Q8iqyyw5LPU1MQ
+Content-Length: 39
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="362" it="0" lt="362" ct="0" ts="1781993970228" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="3454" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: mw-ajLztSE6XXVknnpoFkQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="553" it="0" lt="553" ct="0" ts="1781993970275" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="507" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8g.3zybZmutbuOsc-P3pt8x8eFpIJI; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: LEoU_Ud2SeuDDb88LPU1MQ
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="555" it="0" lt="555" ct="0" ts="1781993970288" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="3328" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:30 GMT
+Server: railway-hikari
+x-railway-request-id: NvIMOGjdTsmaKq0S6WHkDg
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="766" it="0" lt="766" ct="0" ts="1781993970308" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="507" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8g.3zybZmutbuOsc-P3pt8x8eFpIJI; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: qsrVYOO8Q1Sh12M7-_9nXA
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="773" it="0" lt="773" ct="0" ts="1781993970318" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="2033" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+x-railway-request-id: s7W66DZtR8Kmo-wc9o6EoQ
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="771" it="0" lt="771" ct="0" ts="1781993970334" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="789" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+x-railway-request-id: rlfuF-JeQEmzd3SrljLL4A
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="1071" it="0" lt="1071" ct="0" ts="1781993970279" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8w.bFsG-5TpLe1cSElrwXWSwODYzfs; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: 9xsUGj-3Rk2boRfW9I3ezw
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="784" it="0" lt="783" ct="0" ts="1781993970592" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+x-railway-request-id: QNqV4QqXSwSZxSO29I3ezw
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="574" it="0" lt="574" ct="0" ts="1781993970830" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: UiAKnmzJT5muDsXc9o6EoQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="834" it="0" lt="834" ct="0" ts="1781993970574" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: O4QVyVRNSgWQB3yEjq4OvQ
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="785" it="0" lt="785" ct="0" ts="1781993970846" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8w.bFsG-5TpLe1cSElrwXWSwODYzfs; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: 5UJ6dP1wQHK97j4r-_9nXA
+Content-Length: 39
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="587" it="0" lt="587" ct="0" ts="1781993971378" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+x-railway-request-id: rWUR21YPQV2XpN5JnpoFkQ
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="560" it="0" lt="560" ct="0" ts="1781993971406" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+x-railway-request-id: Ez10NkLyTvqp_ZKjnpoFkQ
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="889" it="0" lt="889" ct="0" ts="1781993971076" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: 2I6xdu7wRiCMCaRvn6XIxQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="1193" it="0" lt="1193" ct="0" ts="1781993970776" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR8w.bFsG-5TpLe1cSElrwXWSwODYzfs; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: zZHVZoD3ToqEGJ-_npoFkQ
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="858" it="0" lt="858" ct="0" ts="1781993971107" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+x-railway-request-id: gIE-Eb57SzaMPdz_npoFkQ
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="614" it="0" lt="614" ct="0" ts="1781993971352" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: c_efuUNCTLu0dmcI9o6EoQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="562" it="0" lt="562" ct="0" ts="1781993971409" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+x-railway-request-id: 89xZM2JhTTeYVNTNLPU1MQ
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="882" it="0" lt="882" ct="0" ts="1781993971092" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:31 GMT
+Server: railway-hikari
+x-railway-request-id: ZjrKRkO-RaC30VFk9I3ezw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="926" it="0" lt="926" ct="0" ts="1781993971275" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9A.NEjWH1XaDQvYUClIV4vVL5QxRKQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: Kdm2LVSZSISd88Q62prcFg
+Content-Length: 39
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="601" it="0" lt="601" ct="0" ts="1781993971633" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: tM7R4K47S_-02_k3jq4OvQ
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="282" it="0" lt="282" ct="0" ts="1781993971968" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: pI6Y8azdSXun7-2E-_9nXA
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="514" it="0" lt="514" ct="0" ts="1781993971973" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9A.NEjWH1XaDQvYUClIV4vVL5QxRKQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: mfm3ksFJQISoglBBlt7tkg
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="556" it="0" lt="556" ct="0" ts="1781993971968" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: 0j0zzaa2TvyaPGrA9I3ezw
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="582" it="0" lt="582" ct="0" ts="1781993971967" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: mCoYbmq-QRSqdEuA-_9nXA
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="586" it="0" lt="586" ct="0" ts="1781993971975" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: JZZXmf_wSK-2s9wPljLL4A
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="595" it="0" lt="595" ct="0" ts="1781993971974" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: xmIfJX9ZRhamkDANljLL4A
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="622" it="0" lt="622" ct="0" ts="1781993971972" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: yKfV4EGhTq2jRyYDY53eZw
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="633" it="0" lt="633" ct="0" ts="1781993971975" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: v864HOixS0m44-YSLPU1MQ
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="421" it="0" lt="421" ct="0" ts="1781993972203" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: mI_ZZW39RV-tWWjFY53eZw
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="374" it="0" lt="374" ct="0" ts="1781993972251" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: JOyIaC2RQyuWoxQ9ljLL4A
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="419" it="0" lt="419" ct="0" ts="1781993972234" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: nR9w_u01SzmEU044Y53eZw
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="221" it="0" lt="221" ct="0" ts="1781993972489" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: CcEb4xE7RvySO5gULPU1MQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="221" it="0" lt="221" ct="0" ts="1781993972526" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: x1IVWxAdQxi4hMohlt7tkg
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="527" it="0" lt="527" ct="0" ts="1781993972562" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: 3AYjU74-RUO1VVge9I3ezw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="518" it="0" lt="518" ct="0" ts="1781993972571" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: EcmbYlFaT565tzMZlt7tkg
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="495" it="0" lt="494" ct="0" ts="1781993972596" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+x-railway-request-id: kfCqcdZ-QoeKgSZm-_9nXA
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="538" it="0" lt="538" ct="0" ts="1781993972551" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:32 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9A.NEjWH1XaDQvYUClIV4vVL5QxRKQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: Zh31KvpXSDe69pUL9o6EoQ
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="695" it="0" lt="695" ct="0" ts="1781993972611" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9Q.G40li51h9LIYcZW85-uuBnndUOI; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: 255omM4_RKChqoqc-_9nXA
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="698" it="0" lt="698" ct="0" ts="1781993972625" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: jy4U31wPS4e2TPBC-_9nXA
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="924" it="0" lt="924" ct="0" ts="1781993972627" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9Q.G40li51h9LIYcZW85-uuBnndUOI; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: 8UtBVkakQDWWBgPO2prcFg
+Content-Length: 39
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="920" it="0" lt="920" ct="0" ts="1781993972654" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: 4ODaaXnXSNGl6iR22prcFg
+Content-Length: 514
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="884" it="0" lt="883" ct="0" ts="1781993972711" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: 5SnR2RGmTO2t-WQM9I3ezw
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="854" it="0" lt="854" ct="0" ts="1781993972749" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: BMSrUkI3QKqAQSIs-_9nXA
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="536" it="0" lt="536" ct="0" ts="1781993973090" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: G3C-D1P-QBWphiGk6WHkDg
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="920" it="0" lt="919" ct="0" ts="1781993973092" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: blxShi5sRPuNLWXJ9I3ezw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="687" it="0" lt="687" ct="0" ts="1781993973325" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: xAvG3sagQEmB11EAljLL4A
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="920" it="0" lt="920" ct="0" ts="1781993973092" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: KKIIn6mJT9q9zugiY53eZw
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="704" it="0" lt="704" ct="0" ts="1781993973308" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: a5_3EtWyTeejztS2npoFkQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="461" it="0" lt="461" ct="0" ts="1781993973553" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: fFcztPXRQh-3thYwLPU1MQ
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="920" it="0" lt="920" ct="0" ts="1781993973091" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9Q.G40li51h9LIYcZW85-uuBnndUOI; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: 7Fyo3TNTRlaoWdQTnpoFkQ
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="439" it="0" lt="439" ct="0" ts="1781993973575" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: 4yATTdPgShO-jtUult7tkg
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="418" it="0" lt="418" ct="0" ts="1781993973596" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:33 GMT
+Server: railway-hikari
+x-railway-request-id: uOlCncimTciH7eEr9I3ezw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="590" it="0" lt="590" ct="0" ts="1781993973605" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9g.8gKFPFRCtSpd4zBmTD-q7zpawXQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: m6NMvYpcQDCNWdsLnpoFkQ
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="806" it="0" lt="806" ct="0" ts="1781993973628" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9g.8gKFPFRCtSpd4zBmTD-q7zpawXQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: ADNMmBo3TnyM_yeFLPU1MQ
+Content-Length: 39
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="456" it="0" lt="456" ct="0" ts="1781993974013" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+x-railway-request-id: K9KnhgqsRiyvDtbD9I3ezw
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="466" it="0" lt="466" ct="0" ts="1781993974014" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+x-railway-request-id: des1-RGnSAaXm0HZlt7tkg
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="467" it="0" lt="467" ct="0" ts="1781993974013" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+x-railway-request-id: oIRnM3MtTTWE3RvU-_9nXA
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="501" it="0" lt="501" ct="0" ts="1781993974015" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+x-railway-request-id: btb-AwFQS3-TnxSvnpoFkQ
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="501" it="0" lt="501" ct="0" ts="1781993974015" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+x-railway-request-id: zfwDT2ONRw2sJzLWnPRhug
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="360" it="0" lt="360" ct="0" ts="1781993974197" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: MWl3Wf-_TKSatbNkWUN5dQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="558" it="0" lt="558" ct="0" ts="1781993974018" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+x-railway-request-id: 6RILgniGQEW49m_Klt7tkg
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="577" it="0" lt="577" ct="0" ts="1781993974017" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: Dw3VNZuPSaGkKEPOnpoFkQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="803" it="0" lt="803" ct="0" ts="1781993974018" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9g.8gKFPFRCtSpd4zBmTD-q7zpawXQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: t9H2mmwvQcqT_MSA-_9nXA
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="426" it="0" lt="426" ct="0" ts="1781993974436" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:34 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: H7ayHdu5RLimGWZiLPU1MQ
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="624" it="0" lt="624" ct="0" ts="1781993974470" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9g.8gKFPFRCtSpd4zBmTD-q7zpawXQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: 1r-fDVWPRWadL6IL-_9nXA
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="860" it="0" lt="860" ct="0" ts="1781993974481" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9w.cHl1xJ2VuG01_nb0J2NK3lYZmrE; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: OA-99yofQGqjrtqtjq4OvQ
+Content-Length: 39
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="874" it="0" lt="874" ct="0" ts="1781993974481" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: cBGVSkNxTxSBUKmCnPRhug
+Content-Length: 514
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="857" it="0" lt="857" ct="0" ts="1781993974518" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: wX6Rm6n6Qduy_PdU9o6EoQ
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="870" it="0" lt="870" ct="0" ts="1781993974517" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="789" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: GJRtyrtvQsK5tymD9I3ezw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="1051" it="0" lt="1051" ct="0" ts="1781993974578" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="507" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9w.cHl1xJ2VuG01_nb0J2NK3lYZmrE; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: VfqJh6ahRfKB-cEv9I3ezw
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="1075" it="0" lt="1075" ct="0" ts="1781993974558" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: jT3WZR7DReGWrJaz9o6EoQ
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="1067" it="0" lt="1067" ct="0" ts="1781993974596" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: 8ajawHNaRmW7khh0ljLL4A
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="843" it="0" lt="843" ct="0" ts="1781993974822" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: COW4pWloTlqS2lWsljLL4A
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="823" it="0" lt="823" ct="0" ts="1781993974863" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="2033" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: trR86DNYRsecKk3k2prcFg
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="378" it="0" lt="378" ct="0" ts="1781993975342" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: 52bRXsSaTbGMY-lF-_9nXA
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="624" it="0" lt="624" ct="0" ts="1781993975096" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="3454" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: GCccCnQTTg-AR8iSnpoFkQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="399" it="0" lt="399" ct="0" ts="1781993975357" s="true" lb="" rc="200" rm="OK" tn=" 1-2" dt="text" de="" by="3328" sby="0" ng="10" na="10">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: gADrmHBuQfKF4ktAlt7tkg
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="385" it="0" lt="385" ct="0" ts="1781993975377" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="3328" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: c_U4oSgaRfimEaSu9I3ezw
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="394" it="0" lt="394" ct="0" ts="1781993975388" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="3328" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: dKuPZ1ZrS-2Tuo_eljLL4A
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="197" it="0" lt="197" ct="0" ts="1781993975631" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="3454" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: lSRfUPo3QVyQYxZblt7tkg
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="208" it="0" lt="208" ct="0" ts="1781993975634" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="789" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: 11fpPexWTdeqluWiljLL4A
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="217" it="0" lt="217" ct="0" ts="1781993975666" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="2033" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: ZBWEl729Sca2gPa2-_9nXA
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="218" it="0" lt="218" ct="0" ts="1781993975687" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="789" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: EWJWKbTQR9SAMf6CLPU1MQ
+Content-Length: 514
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="249" it="0" lt="249" ct="0" ts="1781993975664" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="789" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: 4-6k9VW0Q8yUtwauljLL4A
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="223" it="0" lt="223" ct="0" ts="1781993975721" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="2033" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: zu6vdLRGTlWQnrzmljLL4A
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="223" it="0" lt="223" ct="0" ts="1781993975721" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="2033" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:35 GMT
+Server: railway-hikari
+x-railway-request-id: FTqUFBfLSb6EI26flt7tkg
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="499" it="0" lt="499" ct="0" ts="1781993975763" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="507" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR-A.FO3clD-_5FQbJq8UcyvlgTVyqgQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: PS2ryUF1SI-VzHVm-_9nXA
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="644" it="0" lt="644" ct="0" ts="1781993975783" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="507" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR-A.FO3clD-_5FQbJq8UcyvlgTVyqgQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: UsRTw4ieSdenckq0ljLL4A
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="621" it="0" lt="621" ct="0" ts="1781993975829" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="2033" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: KEdjfcwPQoGV2j3X2prcFg
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="619" it="0" lt="618" ct="0" ts="1781993975843" s="true" lb="" rc="200" rm="OK" tn=" 1-3" dt="text" de="" by="3328" sby="0" ng="9" na="9">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: hn6_oyOcSOO3EMaTljLL4A
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="594" it="0" lt="594" ct="0" ts="1781993975884" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="789" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: zbFlKGvgTNuV0RE72prcFg
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="597" it="0" lt="597" ct="0" ts="1781993975914" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="3328" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: LJZW9TtyTZKh_RpN9I3ezw
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="610" it="0" lt="610" ct="0" ts="1781993975906" s="true" lb="" rc="200" rm="OK" tn=" 1-1" dt="text" de="" by="3328" sby="0" ng="8" na="8">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: Ctt_vp02S0eEF8_ALPU1MQ
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="589" it="0" lt="589" ct="0" ts="1781993975945" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="789" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: r6kSZHYqReWpiXorxtoGcA
+Content-Length: 514
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="589" it="0" lt="589" ct="0" ts="1781993975945" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="789" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: 7JN4A_YIReCrW5vBlt7tkg
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="301" it="0" lt="301" ct="0" ts="1781993976264" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="3454" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: UR1lpaUHQOOIhfA79o6EoQ
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="156" it="0" lt="156" ct="0" ts="1781993976451" s="false" lb="" rc="502" rm="Bad Gateway" tn=" 1-5" dt="text" de="utf-8" by="237" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+content-type: text/plain; charset=utf-8
+Content-Length: 14
+x-hikari-trace: mia1.nv6z
+server: railway-hikari
+x-railway-edge: mia1
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <responseData class="java.lang.String">upstream error</responseData>
+  <cookies class="java.lang.String">session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR9w.cHl1xJ2VuG01_nb0J2NK3lYZmrE</cookies>
+  <method class="java.lang.String">GET</method>
+  <queryString class="java.lang.String"></queryString>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="255" it="0" lt="255" ct="0" ts="1781993976428" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="3454" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: 2h0qb8agQ4y1CvGxlt7tkg
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="223" it="0" lt="223" ct="0" ts="1781993976480" s="true" lb="" rc="200" rm="OK" tn=" 1-4" dt="text" de="" by="3328" sby="0" ng="7" na="7">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: Jml1_wh-ReO2bjy-9I3ezw
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="444" it="0" lt="444" ct="0" ts="1781993976512" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="507" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR-A.FO3clD-_5FQbJq8UcyvlgTVyqgQ; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: MKUOMMh8TPyWL7-mnPRhug
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="458" it="0" lt="457" ct="0" ts="1781993976535" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="3328" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: Zau2EeU4QMeV9wianPRhug
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="459" it="0" lt="459" ct="0" ts="1781993976535" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="3328" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: dFdjoIZMQGyQnZmmjq4OvQ
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="443" it="0" lt="443" ct="0" ts="1781993976566" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="2033" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: jsai7u29QGOeV2679I3ezw
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="336" it="0" lt="336" ct="0" ts="1781993976684" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="2033" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: 85YVrI44TTit4UUFlt7tkg
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="444" it="0" lt="444" ct="0" ts="1781993976609" s="true" lb="" rc="200" rm="OK" tn=" 1-5" dt="text" de="" by="3328" sby="0" ng="6" na="6">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:36 GMT
+Server: railway-hikari
+x-railway-request-id: aaLbcmufQ3OVN6M3xtoGcA
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="225" it="0" lt="224" ct="0" ts="1781993976959" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="3454" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: gJkr8_RiTp26D1vSlt7tkg
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="497" it="0" lt="497" ct="0" ts="1781993976994" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="507" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR-Q.Yt-yQYRmtpXURdf15nJXrRPU_64; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: MKQznIuWRBKVHjQajq4OvQ
+Content-Length: 39
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="686" it="0" lt="686" ct="0" ts="1781993977010" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="789" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+x-railway-request-id: oCWFtU9ASH-6aX3pY53eZw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="701" it="0" lt="701" ct="0" ts="1781993976997" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="507" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+Set-Cookie: session=.eJyrVkrNTczMUbJSSkzJzcxzSK_MLSjK10vOz1XSUcrLz00qSgXKOYLkFNwrcwOK8oHiRflwDZnFJUWJKflFQNGSzIJ8oHBpcWliUSZIWWlxalF8ZoqSlWEtACeqIxM.ajcR-Q.Yt-yQYRmtpXURdf15nJXrRPU_64; HttpOnly; Path=/
+vary: Cookie
+x-railway-request-id: I_dQvNIoRc-CS8BdLPU1MQ
+Content-Length: 39
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Length: 52
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/auth/login</java.net.URL>
+</httpSample>
+<httpSample t="681" it="0" lt="681" ct="0" ts="1781993977021" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="789" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+x-railway-request-id: xXKdVCxjRK6IWgEN9I3ezw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="534" it="0" lt="534" ct="0" ts="1781993977185" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="2033" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+x-railway-request-id: uTI-ec-qR8Wpvcn49o6EoQ
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="236" it="0" lt="236" ct="0" ts="1781993977493" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="3454" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: 8Rg1ccmyQnCM7hsylt7tkg
+Content-Length: 3164
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="219" it="0" lt="219" ct="0" ts="1781993977697" s="true" lb="" rc="200" rm="OK" tn=" 1-8" dt="text" de="" by="3328" sby="0" ng="5" na="5">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+x-railway-request-id: vBngGyGsRiKUXlY9ljLL4A
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="231" it="0" lt="231" ct="0" ts="1781993977700" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="3454" sby="0" ng="4" na="4">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+vary: Cookie
+vary: accept-encoding
+x-railway-request-id: rI_4X6IvTc6awT9qljLL4A
+Content-Length: 3164
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/usuarios</java.net.URL>
+</httpSample>
+<httpSample t="239" it="0" lt="239" ct="0" ts="1781993977703" s="true" lb="" rc="200" rm="OK" tn=" 1-6" dt="text" de="" by="3328" sby="0" ng="4" na="4">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+x-railway-request-id: dZs8eNeUSyej9gNzLPU1MQ
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="215" it="0" lt="215" ct="0" ts="1781993977731" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="2033" sby="0" ng="3" na="3">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+x-railway-request-id: 9np5HlFcRXG1ZRRvxtoGcA
+Content-Length: 1757
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="248" it="0" lt="248" ct="0" ts="1781993977721" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="789" sby="0" ng="3" na="3">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:37 GMT
+Server: railway-hikari
+x-railway-request-id: _apNuLLPRKaAuTgdn6XIxQ
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="218" it="0" lt="218" ct="0" ts="1781993977933" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="2033" sby="0" ng="3" na="3">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:38 GMT
+Server: railway-hikari
+x-railway-request-id: iTpdIcviSS-Y6T049o6EoQ
+Content-Length: 1757
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/rutinas</java.net.URL>
+</httpSample>
+<httpSample t="205" it="0" lt="205" ct="0" ts="1781993977947" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="789" sby="0" ng="3" na="3">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:38 GMT
+Server: railway-hikari
+x-railway-request-id: AySa4dc8SHy0FcFbWUN5dQ
+Content-Length: 514
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="217" it="0" lt="217" ct="0" ts="1781993977970" s="true" lb="" rc="200" rm="OK" tn=" 1-7" dt="text" de="" by="3328" sby="0" ng="3" na="3">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:38 GMT
+Server: railway-hikari
+x-railway-request-id: hyyj7tUoRpulyjxBljLL4A
+Content-Length: 3052
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="263" it="0" lt="263" ct="0" ts="1781993978151" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="789" sby="0" ng="2" na="2">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:38 GMT
+Server: railway-hikari
+x-railway-request-id: PU-aa3E7TESN1pY99I3ezw
+Content-Length: 514
+x-hikari-trace: mia1.nv6z
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/asistencia</java.net.URL>
+</httpSample>
+<httpSample t="262" it="0" lt="262" ct="0" ts="1781993978153" s="true" lb="" rc="200" rm="OK" tn=" 1-10" dt="text" de="" by="3328" sby="0" ng="2" na="2">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:38 GMT
+Server: railway-hikari
+x-railway-request-id: TO0lLLUwTiiuuzG6jq4OvQ
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+<httpSample t="304" it="0" lt="304" ct="0" ts="1781993978416" s="true" lb="" rc="200" rm="OK" tn=" 1-9" dt="text" de="" by="3328" sby="0" ng="1" na="1">
+  <responseHeader class="java.lang.String">HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 20 Jun 2026 22:19:38 GMT
+Server: railway-hikari
+x-railway-request-id: KJ8fSmasQdydMIgB2prcFg
+Content-Length: 3052
+x-hikari-trace: mia1.0twb
+x-railway-edge: mia1
+vary: accept-encoding
+Connection: keep-alive
+</responseHeader>
+  <requestHeader class="java.lang.String">Connection: keep-alive
+User-Agent: JMeter/5.6.3
+Content-Type: application/json
+</requestHeader>
+  <java.net.URL>https://gestion-gympro.up.railway.app/api/membresias</java.net.URL>
+</httpSample>
+
+</testResults>

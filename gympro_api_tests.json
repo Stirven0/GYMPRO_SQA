@@ -1,0 +1,249 @@
+{
+  "info": {
+    "name": "GymPro API Tests",
+    "description": "Colección de pruebas de API para GymPro. Ejecutar: newman run gympro_api_tests.json",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login - Admin (éxito)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Rol administrador', () => {",
+              "  pm.expect(pm.response.json().rol).to.eql('administrador');",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://gestion-gympro.up.railway.app/api/auth/login",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"admin@gympro.com\",\"password\":\"Admin1234!\"}"
+        }
+      }
+    },
+    {
+      "name": "Login - Credenciales inválidas",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 401', () => pm.response.to.have.status(401));",
+              "pm.test('Response has error', () => {",
+              "  pm.expect(pm.response.json()).to.have.property('error');",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://gestion-gympro.up.railway.app/api/auth/login",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"fake@email.com\",\"password\":\"wrongpass\"}"
+        }
+      }
+    },
+    {
+      "name": "Login - Bypass CAPTCHA (sin resolver)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200 (bypass confirmado)', () => pm.response.to.have.status(200));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://gestion-gympro.up.railway.app/api/auth/login",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"admin@gympro.com\",\"password\":\"Admin1234!\"}"
+        }
+      }
+    },
+    {
+      "name": "GET /api/usuarios (autenticado)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Response is array', () => pm.expect(pm.response.json()).to.be.an('array'));",
+              "pm.test('Has users', () => pm.expect(pm.response.json().length).to.be.greaterThan(0));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://gestion-gympro.up.railway.app/api/usuarios"
+      }
+    },
+    {
+      "name": "GET /api/rutinas (autenticado)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Response is array', () => pm.expect(pm.response.json()).to.be.an('array'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://gestion-gympro.up.railway.app/api/rutinas"
+      }
+    },
+    {
+      "name": "GET /api/asistencia (autenticado)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Response is array', () => pm.expect(pm.response.json()).to.be.an('array'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://gestion-gympro.up.railway.app/api/asistencia"
+      }
+    },
+    {
+      "name": "GET /api/membresias (autenticado)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Response is array', () => pm.expect(pm.response.json()).to.be.an('array'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://gestion-gympro.up.railway.app/api/membresias"
+      }
+    },
+    {
+      "name": "GET /api/reportes/asistencia-mensual (autenticado)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Response is array', () => pm.expect(pm.response.json()).to.be.an('array'));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "url": "https://gestion-gympro.up.railway.app/api/reportes/asistencia-mensual"
+      }
+    },
+    {
+      "name": "Login - Entrenador (éxito)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Rol entrenador', () => {",
+              "  pm.expect(pm.response.json().rol).to.eql('entrenador');",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://gestion-gympro.up.railway.app/api/auth/login",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"carlos.e@gympro.com\",\"password\":\"Entrena123!\"}"
+        }
+      }
+    },
+    {
+      "name": "Login - Miembro (éxito)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "pm.test('Rol miembro', () => {",
+              "  pm.expect(pm.response.json().rol).to.eql('miembro');",
+              "});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://gestion-gympro.up.railway.app/api/auth/login",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"juan@gmail.com\",\"password\":\"Miembro123!\"}"
+        }
+      }
+    },
+    {
+      "name": "Logout",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "url": "https://gestion-gympro.up.railway.app/api/auth/logout"
+      }
+    }
+  ]
+}
