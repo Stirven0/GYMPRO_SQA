@@ -44,7 +44,9 @@ Repositorio de documentación (solo markdown, sin código ejecutable) sobre **As
 - **Virtual env:** `.venv/` — activar con `source .venv/bin/activate`
 - Paquetes instalados: `pytest`, `selenium`, `requests`
 - `curl` disponible en el sistema
-- Para Newman: `npm install -g newman`
+- **Newman:** `npm install -g newman` (versión 6.2.2 instalada)
+- **JMeter:** `/opt/jmeter` (versión 5.6.3 instalada)
+- **ZAP:** pendiente de instalar (descarga ~200MB)
 
 ## Estado del repositorio
 
