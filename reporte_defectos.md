@@ -23,4 +23,4 @@ Formato de registro de incidencias. Cada defecto encontrado durante las pruebas 
 
 | ID | Fecha | Módulo | Severidad | Descripción | Estado |
 |----|-------|--------|-----------|-------------|--------|
-| | | | | | |
+| D-001 | 20/06/2026 | Login | Crítica | **CAPTCHA bypass**: El captcha matemático solo se valida en cliente (JS). `POST /api/auth/login` con JSON directo autentica sin resolver el captcha. Afecta a todos los roles (admin, entrenador, miembro). | Abierto |

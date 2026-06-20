@@ -1,0 +1,92 @@
+[
+  {
+    "prueba": "Login page carga OK",
+    "estado": "PASS",
+    "detalle": "HTTP 200"
+  },
+  {
+    "prueba": "Login contiene t\u00edtulo GymPro",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Login contiene captcha",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Login incluye Space Grotesk",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Root redirige a /login",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "/health \u2192 404",
+    "estado": "PASS",
+    "detalle": "HTTP 404"
+  },
+  {
+    "prueba": "/register \u2192 404",
+    "estado": "PASS",
+    "detalle": "HTTP 404"
+  },
+  {
+    "prueba": "/admin \u2192 404",
+    "estado": "PASS",
+    "detalle": "HTTP 404"
+  },
+  {
+    "prueba": "/.env \u2192 404",
+    "estado": "PASS",
+    "detalle": "HTTP 404"
+  },
+  {
+    "prueba": "/api/health \u2192 404",
+    "estado": "PASS",
+    "detalle": "HTTP 404"
+  },
+  {
+    "prueba": "/dashboard redirige a login",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "GET /api/auth/login \u2192 405",
+    "estado": "PASS",
+    "detalle": "HTTP 405"
+  },
+  {
+    "prueba": "Login con body vac\u00edo \u2192 error",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Login inv\u00e1lido \u2192 401",
+    "estado": "PASS",
+    "detalle": "HTTP 401"
+  },
+  {
+    "prueba": "Mensaje de error correcto",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "OPTIONS /api/auth/login \u2192 200",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Login admin exitoso (sin captcha)",
+    "estado": "PASS",
+    "detalle": "\u26a0\ufe0f CAPTCHA no validado en servidor - bypass posible"
+  },
+  {
+    "prueba": "Server header presente: railway-hikari",
+    "estado": "PASS",
+    "detalle": ""
+  }
+]
