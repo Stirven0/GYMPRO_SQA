@@ -48,43 +48,7 @@
 - Fuentes: Space Grotesk + Orbitron
 - Responsive (sidebar se oculta en <700px)
 
----
 
-## 2. Portal de Administración (Vercel)
-**https://gymm-nu.vercel.app**
-
-### Stack
-- **React 19.1** (Vite + TypeScript)
-- **Tailwind CSS**
-- **Fuentes**: Inter + Poppins (Google Fonts)
-- **Meta**: OG Image, Twitter Card, Schema.org
-- **Autor**: Dualite Alpha
-- **Host**: Vercel
-
-### Descripción
-"Secure login for the GymPro Admin and Receptionist Management Portal."
-
----
-
-## 3. Sitio Oficial / Landing
-**https://gympro.click**
-
-### Stack
-- **Next.js** (con Turbopack)
-- **Ant Design** (v5, CSS-in-JS)
-- **Host**: Cloudflare (con analytics)
-- **Estado**: Página vacía (solo layout Ant, sin contenido visible)
-
----
-
-## 4. Otros Sitios GymPro
-- **https://www.gympro.fitness** — 503 Service Unavailable
-- **https://gympro.cloud** — "GymPro Manager" (placeholder)
-- **https://gympro.framer.website** — Template Framer para fitness
-- **https://www.gympro.co.in** — GymPro India (gestión gyms)
-- **https://www.gympro.com.co** — GymPro Colombia (fitness/entrenamiento)
-
----
 
 ## 5. Repositorios Relacionados
 - **katy1609/gympro-management-system** (GitHub)
