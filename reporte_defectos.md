@@ -24,3 +24,5 @@ Formato de registro de incidencias. Cada defecto encontrado durante las pruebas 
 | ID | Fecha | Módulo | Severidad | Descripción | Estado |
 |----|-------|--------|-----------|-------------|--------|
 | D-001 | 20/06/2026 | Login | Crítica | **CAPTCHA bypass**: El captcha matemático solo se valida en cliente (JS). `POST /api/auth/login` con JSON directo autentica sin resolver el captcha. Afecta a todos los roles (admin, entrenador, miembro). | Abierto |
+| D-002 | 20/06/2026 | Login | Baja | **Cookie sin flag Secure**: La cookie de sesión se envía sin `Secure`, aunque la app corre 100% sobre HTTPS. Riesgo bajo. | Abierto |
+| D-003 | 20/06/2026 | API | Media | **NoSQL injection causa HTTP 500**: Enviar `{"email":{"$ne":""},"password":{"$ne":""}}` al login produce error interno 500. Posible fuga de información o manipulación de consultas. | Abierto |
