@@ -2,10 +2,748 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="refresh" content="0;url=informe/">
-<title>GymPro SQA — Informe de Evaluación</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informe de Evaluación — GymPro SQA</title>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4">
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+  * { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+  .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+  .gradient-card { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+  .glass { background: rgba(255,255,255,0.04); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.06); }
+  .glass-dark { background: rgba(0,0,0,0.3); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.04); }
+  .hover-lift { transition: transform .25s, box-shadow .25s; }
+  .hover-lift:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,.35); }
+  .anim-on { animation: fadeUp .55s ease forwards; opacity: 0; }
+  @keyframes fadeUp { 0%{opacity:0;transform:translateY(22px)} 100%{opacity:1;transform:translateY(0)} }
+  .d1 { animation-delay: .08s } .d2 { animation-delay: .16s } .d3 { animation-delay: .24s } .d4 { animation-delay: .32s }
+  ::-webkit-scrollbar { width: 7px } ::-webkit-scrollbar-track { background: #1e293b } ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px }
+  .thumb { transition: all .2s; cursor: pointer; }
+  .thumb:hover { transform: scale(1.03); filter: brightness(1.1); }
+  #lightbox { position: fixed; inset:0; z-index:999; background:rgba(0,0,0,.88); display:none; align-items:center; justify-content:center; cursor:zoom-out; }
+  #lightbox img { max-width:92vw; max-height:92vh; border-radius:8px; box-shadow:0 0 60px rgba(0,0,0,.6); }
+  .code-block { background: #0f172a; border-radius: 8px; padding: 1rem; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: .78rem; line-height: 1.6; overflow-x: auto; }
+  .tab-btn { transition: all .2s; }
+  .tab-btn.active { background: rgba(99,102,241,.2); border-color: #6366f1; color: #a5b4fc; }
+  .stepline { position: relative; padding-left: 2rem; }
+  .stepline::before { content:''; position:absolute; left:7px; top:6px; bottom:-6px; width:2px; background: linear-gradient(180deg, #6366f1 0%, #a78bfa 100%); }
+  .stepline:last-child::before { display: none; }
+  .stepline-dot { position:absolute; left:0; top:5px; width:16px; height:16px; border-radius:50%; background:#6366f1; border:3px solid #1e293b; }
+</style>
 </head>
-<body>
-<p>Redirigiendo al <a href="informe/">informe de evaluación</a>...</p>
+<body class="bg-slate-900 text-slate-100">
+
+<nav class="fixed top-0 w-full z-50 glass-dark">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-14">
+      <span class="text-sm font-semibold tracking-wider text-indigo-400"><i class="fas fa-shield-alt mr-2"></i>GYMPRO · SQA</span>
+      <div class="hidden lg:flex space-x-5 text-xs font-medium">
+        <a href="#resumen" class="text-slate-300 hover:text-white transition">Resumen</a>
+        <a href="#metodologia" class="text-slate-300 hover:text-white transition">Metodología</a>
+        <a href="#funcional" class="text-slate-300 hover:text-white transition">Funcional</a>
+        <a href="#evidencias" class="text-slate-300 hover:text-white transition">Evidencias</a>
+        <a href="#calidad" class="text-slate-300 hover:text-white transition">ISO 25010</a>
+        <a href="#api" class="text-slate-300 hover:text-white transition">API</a>
+        <a href="#defectos" class="text-slate-300 hover:text-white transition">Defectos</a>
+        <a href="#conclusiones" class="text-slate-300 hover:text-white transition">Conclusiones</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="lightbox" onclick="this.style.display='none'"><img id="lightbox-img" src="" alt=""></div>
+
+<header class="gradient-bg pt-20 pb-16 md:pt-28 md:pb-20 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10">
+    <div class="absolute top-8 left-8 w-72 h-72 bg-indigo-500 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-500 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 left-1/2 w-64 h-64 bg-sky-500 rounded-full blur-3xl"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="text-center anim-on">
+      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 mb-6">
+        <i class="fas fa-flask mr-2"></i>Aseguramiento de Calidad de Software
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">
+        Informe de Evaluación <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">GymPro</span>
+      </h1>
+      <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-8">
+        Pruebas funcionales automatizadas · Evaluación ISO/IEC 25010 · Análisis de rendimiento y seguridad · Documentación completa del sistema de gestión deportiva.
+      </p>
+      <div class="flex flex-wrap justify-center gap-3 text-sm">
+        <span class="inline-flex items-center px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300"><i class="fas fa-calendar mr-2 text-indigo-400"></i>Junio 2026</span>
+        <span class="inline-flex items-center px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300"><i class="fas fa-globe mr-2 text-indigo-400"></i>gestion-gympro.up.railway.app</span>
+        <span class="inline-flex items-center px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300"><i class="fas fa-layer-group mr-2 text-indigo-400"></i>Flask + SQLite</span>
+        <span class="inline-flex items-center px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300"><i class="fas fa-robot mr-2 text-indigo-400"></i>Selenium + Newman + JMeter + ZAP</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+<section id="resumen" class="mb-16 anim-on">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-chart-pie text-indigo-400 mr-3"></i>Resumen Ejecutivo</h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+    <div class="glass rounded-xl p-5 hover-lift">
+      <div class="flex items-center justify-between mb-3"><span class="text-[.65rem] font-medium text-slate-400 uppercase tracking-wider">Pruebas Funcionales</span><i class="fas fa-check-circle text-2xl text-emerald-400"></i></div>
+      <div class="text-3xl md:text-4xl font-extrabold text-emerald-400">119</div>
+      <div class="text-xs text-slate-400 mt-1"><span class="text-emerald-400 font-semibold">100% PASS</span> · 0 fallos</div>
+    </div>
+    <div class="glass rounded-xl p-5 hover-lift">
+      <div class="flex items-center justify-between mb-3"><span class="text-[.65rem] font-medium text-slate-400 uppercase tracking-wider">Calidad ISO 25010</span><i class="fas fa-star text-2xl text-amber-400"></i></div>
+      <div class="text-3xl md:text-4xl font-extrabold text-amber-400">73.30</div>
+      <div class="text-xs text-slate-400 mt-1"><span class="text-amber-400 font-semibold">Bueno</span> · de 100 pts</div>
+    </div>
+    <div class="glass rounded-xl p-5 hover-lift">
+      <div class="flex items-center justify-between mb-3"><span class="text-[.65rem] font-medium text-slate-400 uppercase tracking-wider">Defectos Encontrados</span><i class="fas fa-bug text-2xl text-rose-400"></i></div>
+      <div class="text-3xl md:text-4xl font-extrabold text-rose-400">4</div>
+      <div class="text-xs text-slate-400 mt-1"><span class="text-rose-400 font-semibold">1 crítico</span> · 1 alto · 1 medio · 1 bajo</div>
+    </div>
+    <div class="glass rounded-xl p-5 hover-lift">
+      <div class="flex items-center justify-between mb-3"><span class="text-[.65rem] font-medium text-slate-400 uppercase tracking-wider">Rutas Documentadas</span><i class="fas fa-sitemap text-2xl text-sky-400"></i></div>
+      <div class="text-3xl md:text-4xl font-extrabold text-sky-400">21</div>
+      <div class="text-xs text-slate-400 mt-1"><span class="text-sky-400 font-semibold">3 roles</span> · 43 capturas de evidencia</div>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6 md:p-8">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="font-semibold mb-3 flex items-center"><i class="fas fa-clipboard-list text-indigo-400 mr-2"></i>Alcance de la Evaluación</h3>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>119 pruebas funcionales</strong> automatizadas con Selenium WebDriver cubriendo 21 rutas en 3 roles</li>
+          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>Evaluación ISO/IEC 25010</strong> (SQuaRE) — 8 características, 26 subcaracterísticas</li>
+          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>Pruebas de API REST</strong> con Newman (11 endpoints, 20 aserciones)</li>
+          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>Pruebas de carga</strong> con JMeter (150 peticiones, 10 usuarios concurrentes)</li>
+          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>Escaneo de seguridad</strong> con OWASP ZAP (0 alertas críticas/altas)</li>
+          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>18 pruebas de humo/sanidad</strong> verificando disponibilidad del sistema</li>
+          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>43 capturas de pantalla</strong> como evidencia visual del funcionamiento</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-3 flex items-center"><i class="fas fa-microscope text-indigo-400 mr-2"></i>Hallazgos Principales</h3>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li><i class="fas fa-circle-check text-emerald-400 mr-2 text-xs"></i>Todos los módulos funcionales operativos y verificados</li>
+          <li><i class="fas fa-circle-check text-emerald-400 mr-2 text-xs"></i>Diferencias de privilegios por rol correctamente implementadas</li>
+          <li><i class="fas fa-circle-check text-emerald-400 mr-2 text-xs"></i>Tiempo de respuesta promedio: <strong>554 ms</strong> (JMeter, 150 req)</li>
+          <li><i class="fas fa-circle-exclamation text-rose-400 mr-2 text-xs"></i>CAPTCHA solo <em>client-side</em> — autentica sin resolverlo vía API directa <span class="text-rose-400 font-medium">(D-001)</span></li>
+          <li><i class="fas fa-circle-exclamation text-rose-400 mr-2 text-xs"></i>API sin filtro por rol — un miembro ve datos de todos los usuarios <span class="text-rose-400 font-medium">(D-004)</span></li>
+          <li><i class="fas fa-circle-exclamation text-rose-400 mr-2 text-xs"></i>Cookie de sesión sin flag Secure <span class="text-rose-400 font-medium">(D-002)</span></li>
+          <li><i class="fas fa-circle-check text-emerald-400 mr-2 text-xs"></i>Sin vulnerabilidades críticas/altas detectadas por OWASP ZAP</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="metodologia" class="mb-16 anim-on d1">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-flask text-indigo-400 mr-3"></i>Metodología de Pruebas</h2>
+
+  <div class="glass rounded-xl p-6 md:p-8">
+    <div class="flex flex-wrap gap-2 mb-8">
+      <button class="tab-btn active px-4 py-2 rounded-lg text-xs font-medium border border-indigo-500/30 text-indigo-300" data-tab="funcional-tab" onclick="switchTab('funcional-tab',this)"><i class="fas fa-robot mr-1"></i>Funcionales</button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30" data-tab="api-tab" onclick="switchTab('api-tab',this)"><i class="fas fa-plug mr-1"></i>API</button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30" data-tab="carga-tab" onclick="switchTab('carga-tab',this)"><i class="fas fa-gauge-high mr-1"></i>Carga</button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30" data-tab="seguridad-tab" onclick="switchTab('seguridad-tab',this)"><i class="fas fa-shield mr-1"></i>Seguridad</button>
+    </div>
+
+    <div id="funcional-tab" class="tab-content">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-semibold text-indigo-300 mb-3"><i class="fas fa-code mr-2"></i>Script de prueba</h4>
+          <div class="code-block text-slate-300">
+            <span class="text-emerald-400"># test_funcional_roles.py</span><br>
+            <span class="text-purple-400">from</span> selenium <span class="text-purple-400">import</span> webdriver<br>
+            <span class="text-purple-400">from</span> selenium.webdriver.common.by <span class="text-purple-400">import</span> By<br><br>
+            <span class="text-slate-500"># Login automático con captcha</span><br>
+            driver.get(BASE + <span class="text-amber-300">'/login'</span>)<br>
+            driver.find_element(By.ID, <span class="text-amber-300">'captcha-check'</span>).click()<br>
+            q <span class="text-slate-300">=</span> driver.find_element(By.ID, <span class="text-amber-300">'captcha-q'</span>).text<br>
+            m <span class="text-slate-300">=</span> re.search(<span class="text-amber-300">r'(\d+)\s*\+\s*(\d+)'</span>, q)<br>
+            driver.find_element(By.ID, <span class="text-amber-300">'captcha-ans'</span>).send_keys(<span class="text-amber-300">str(int(m.group(1)) + int(m.group(2)))</span>)<br><br>
+            <span class="text-slate-500"># Navegar, hacer clic, verificar, capturar</span><br>
+            driver.get(BASE + <span class="text-amber-300">'/inicio'</span>)<br>
+            driver.save_screenshot(<span class="text-amber-300">'evidencias/admin/01_inicio.png'</span>)
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-indigo-300 mb-3"><i class="fas fa-list-check mr-2"></i>Flujo de trabajo</h4>
+          <div class="space-y-3">
+            <div class="stepline">
+              <div class="stepline-dot"></div>
+              <p class="text-sm font-medium">Login y captcha</p>
+              <p class="text-xs text-slate-400">Resuelve el captcha matemático automáticamente, autentica con credenciales del rol</p>
+            </div>
+            <div class="stepline">
+              <div class="stepline-dot"></div>
+              <p class="text-sm font-medium">Navegación por ruta</p>
+              <p class="text-xs text-slate-400">Accede a cada ruta del sidebar, verifica que cargue sin errores</p>
+            </div>
+            <div class="stepline">
+              <div class="stepline-dot"></div>
+              <p class="text-sm font-medium">Interacción con elementos</p>
+              <p class="text-xs text-slate-400">Abre modales, hace clic en botones, verifica campos de formulario</p>
+            </div>
+            <div class="stepline">
+              <div class="stepline-dot"></div>
+              <p class="text-sm font-medium">Verificación y captura</p>
+              <p class="text-xs text-slate-400">Assertions sobre presencia de elementos; screenshot para evidencia visual</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 p-4 rounded-lg bg-slate-800/50">
+        <p class="text-xs text-slate-400"><i class="fas fa-info-circle text-indigo-400 mr-1"></i> <strong>ChromeDriver 149.0.7827.155</strong> · Selenium 4.45.0 · Python 3.14 · <code class="text-indigo-300">test_funcional_roles.py</code> ejecuta 119 aserciones en secuencia para los 3 roles, regenerando todas las capturas desde cero en cada ejecución.</p>
+      </div>
+    </div>
+
+    <div id="api-tab" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-semibold text-indigo-300 mb-3"><i class="fas fa-code mr-2"></i>Colección Newman</h4>
+          <div class="code-block text-slate-300">
+            <span class="text-slate-500"># gympro_api_tests.json — 11 endpoints</span><br><br>
+            <span class="text-sky-400">POST</span> /api/auth/login <span class="text-slate-500">→ 200 + cookie</span><br>
+            <span class="text-sky-400">GET</span>  /api/usuarios <span class="text-slate-500">→ 200 (array)</span><br>
+            <span class="text-sky-400">GET</span>  /api/rutinas <span class="text-slate-500">→ 200 (array)</span><br>
+            <span class="text-sky-400">GET</span>  /api/asistencia <span class="text-slate-500">→ 200 (array)</span><br>
+            <span class="text-sky-400">GET</span>  /api/membresias <span class="text-slate-500">→ 200 (array)</span><br>
+            <span class="text-slate-500">...</span><br><br>
+            <span class="text-slate-500"># Ejecución</span><br>
+            newman run gympro_api_tests.json \<br>
+            &nbsp;&nbsp;--reporters cli,json \<br>
+            &nbsp;&nbsp;--report-json evidencias/
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-indigo-300 mb-3"><i class="fas fa-list-check mr-2"></i>Estrategia de aserciones</h4>
+          <div class="space-y-2 text-sm text-slate-300">
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i><strong>Código HTTP</strong> — 200 en éxito, 401 sin auth, 405 en métodos no permitidos</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i><strong>Tipo de respuesta</strong> — JSON array para listados, objeto para detalle</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i><strong>Headers</strong> — Content-Type, Set-Cookie (HttpOnly presente)</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i><strong>Logout</strong> — verifica que la cookie se invalida (nuevo request da 401)</p>
+          </div>
+          <div class="mt-4 p-4 rounded-lg bg-amber-900/20 border border-amber-500/20">
+            <p class="text-xs text-amber-300"><i class="fas fa-triangle-exclamation mr-1"></i> 6 aserciones FAIL: endpoints protegidos retornan HTML (login) en vez de JSON array cuando se consultan sin sesión. Las rutas requieren cookie de sesión.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carga-tab" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-semibold text-indigo-300 mb-3"><i class="fas fa-code mr-2"></i>Plan JMeter</h4>
+          <div class="code-block text-slate-300 text-xs">
+            <span class="text-slate-500"># gympro_carga.jmx — Configuración</span><br><br>
+            Thread Group: 10 usuarios · 3 iteraciones<br>
+            &nbsp;&nbsp;├── HTTP Request: <span class="text-sky-400">GET</span> /login<br>
+            &nbsp;&nbsp;├── HTTP Request: <span class="text-sky-400">POST</span> /api/auth/login<br>
+            &nbsp;&nbsp;├── HTTP Request: <span class="text-sky-400">GET</span> /inicio<br>
+            &nbsp;&nbsp;├── HTTP Request: <span class="text-sky-400">GET</span> /usuarios<br>
+            &nbsp;&nbsp;├── HTTP Request: <span class="text-sky-400">GET</span> /api/membresias<br>
+            &nbsp;&nbsp;└── View Results Tree / Summary Report<br><br>
+            <span class="text-slate-500"># Ejecución</span><br>
+            jmeter -n -t gympro_carga.jmx \<br>
+            &nbsp;&nbsp;-l evidencias/jmeter_results.jtl \<br>
+            &nbsp;&nbsp;-e -o evidencias/jmeter_reporte/
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-indigo-300 mb-3"><i class="fas fa-list-check mr-2"></i>Métricas recolectadas</h4>
+          <div class="space-y-2 text-sm text-slate-300">
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i>Tiempo de respuesta (media, mediana, percentiles)</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i>Tasa de errores</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i>Throughput (req/s)</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i>Bytes enviados/recibidos</p>
+          </div>
+          <div class="mt-4 p-4 rounded-lg bg-slate-800/50">
+            <p class="text-xs text-slate-400"><i class="fas fa-info-circle text-indigo-400 mr-1"></i> JMeter 5.6.3 en modo no-GUI (-n). Dashboard HTML generado automáticamente con statistics.json.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="seguridad-tab" class="tab-content hidden">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h4 class="font-semibold text-indigo-300 mb-3"><i class="fas fa-code mr-2"></i>Escaneo ZAP</h4>
+          <div class="code-block text-slate-300 text-xs">
+            <span class="text-slate-500"># OWASP ZAP 2.17.0 — Escaneo pasivo + activo</span><br><br>
+            <span class="text-slate-500"># 1. Iniciar ZAP en modo daemon</span><br>
+            /opt/ZAP_2.17.0/zap.sh -daemon -port 8080<br><br>
+            <span class="text-slate-500"># 2. Configurar proxy y autenticación</span><br>
+            zap-cli spider https://gestion-gympro.up.railway.app<br>
+            zap-cli active-scan \<br>
+            &nbsp;&nbsp;--scanners all \<br>
+            &nbsp;&nbsp;https://gestion-gympro.up.railway.app<br><br>
+            <span class="text-slate-500"># 3. Exportar reporte</span><br>
+            zap-cli report -o evidencias/zap_reporte.md \<br>
+            &nbsp;&nbsp;-f markdown
+          </div>
+        </div>
+        <div>
+          <h4 class="font-semibold text-indigo-300 mb-3"><i class="fas fa-list-check mr-2"></i>Alcance del escaneo</h4>
+          <div class="space-y-2 text-sm text-slate-300">
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i>Spidering completo de la aplicación</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i>Escaneo activo con todos los scanners</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i>Pruebas de inyección (SQLi, XSS, Command)</p>
+            <p><i class="fas fa-check text-emerald-400 mr-2"></i>Pruebas de configuración de seguridad</p>
+          </div>
+          <div class="mt-4 p-4 rounded-lg bg-slate-800/50">
+            <p class="text-xs text-slate-400"><i class="fas fa-info-circle text-indigo-400 mr-1"></i> ZAP 2.17.0 con perfil de escaneo completo. 12 alertas informativas (ninguna crítica, alta o media).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funcional" class="mb-16 anim-on d2">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-robot text-indigo-400 mr-3"></i>Pruebas Funcionales</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <div class="grid grid-cols-4 gap-3 text-center text-sm">
+      <div class="p-4 rounded-lg bg-slate-800"><div class="text-2xl font-bold text-indigo-400">41</div><div class="text-xs text-slate-400">Admin</div></div>
+      <div class="p-4 rounded-lg bg-slate-800"><div class="text-2xl font-bold text-purple-400">23</div><div class="text-xs text-slate-400">Entrenador</div></div>
+      <div class="p-4 rounded-lg bg-slate-800"><div class="text-2xl font-bold text-sky-400">13</div><div class="text-xs text-slate-400">Miembro</div></div>
+      <div class="p-4 rounded-lg bg-emerald-900/30 border border-emerald-800/30"><div class="text-2xl font-bold text-emerald-400">77</div><div class="text-xs text-emerald-300">Casos únicos</div></div>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-5 mb-6">
+    <div class="glass rounded-xl p-5 hover-lift">
+      <div class="flex items-center justify-between mb-3"><h3 class="font-semibold text-indigo-300 text-sm"><i class="fas fa-user-shield mr-2"></i>Administrador</h3><span class="text-[.6rem] px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300 font-medium">9 rutas</span></div>
+      <div class="text-xs text-slate-400 space-y-1.5">
+        <p><span class="text-slate-200">/inicio</span> Dashboard + stats + accesos rápidos</p>
+        <p><span class="text-slate-200">/usuarios</span> CRUD, filtros por rol/estado</p>
+        <p><span class="text-slate-200">/membresias</span> CRUD, congelar, cancelar</p>
+        <p><span class="text-slate-200">/entrenadores</span> CRUD, 5 entrenadores</p>
+        <p><span class="text-slate-200">/rutinas</span> CRUD, asignar, detalle ejercicios</p>
+        <p><span class="text-slate-200">/asistencia</span> toggleDia + Reiniciar semana</p>
+        <p><span class="text-slate-200">/horarios</span> CRUD, filtros, reserva universal</p>
+        <p><span class="text-slate-200">/reportes</span> 4 secciones (con auditoría)</p>
+        <p><span class="text-slate-200">/perfil</span> Editar perfil</p>
+      </div>
+    </div>
+    <div class="glass rounded-xl p-5 hover-lift">
+      <div class="flex items-center justify-between mb-3"><h3 class="font-semibold text-purple-300 text-sm"><i class="fas fa-user-tie mr-2"></i>Entrenador</h3><span class="text-[.6rem] px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 font-medium">6 rutas</span></div>
+      <div class="text-xs text-slate-400 space-y-1.5">
+        <p><span class="text-slate-200">/inicio</span> toggleAsist + valoración</p>
+        <p><span class="text-slate-200">/asistencia</span> toggleDia (solo lectura)</p>
+        <p><span class="text-slate-200">/horarios</span> CRUD, reserva propia</p>
+        <p><span class="text-slate-200">/rutinas</span> CRUD, detalle ejercicios</p>
+        <p><span class="text-slate-200">/reportes</span> 4 secciones</p>
+        <p><span class="text-slate-200">/perfil</span> Editar perfil</p>
+        <p class="mt-2 text-purple-300"><i class="fas fa-plus-circle mr-1"></i> /valoracion/{id} — formulario evaluación física</p>
+        <p class="text-purple-300"><i class="fas fa-minus-circle mr-1"></i> Sin /usuarios, /membresias, /entrenadores</p>
+      </div>
+    </div>
+    <div class="glass rounded-xl p-5 hover-lift">
+      <div class="flex items-center justify-between mb-3"><h3 class="font-semibold text-sky-300 text-sm"><i class="fas fa-user mr-2"></i>Miembro</h3><span class="text-[.6rem] px-2 py-0.5 rounded bg-sky-500/20 text-sky-300 font-medium">6 rutas</span></div>
+      <div class="text-xs text-slate-400 space-y-1.5">
+        <p><span class="text-slate-200">/inicio</span> Asistencia hoy + membresía + rutina del día</p>
+        <p><span class="text-slate-200">/rutinas</span> Solo lectura</p>
+        <p><span class="text-slate-200">/asistencia</span> Redirige a /inicio</p>
+        <p><span class="text-slate-200">/horarios</span> Solo reservar clases</p>
+        <p><span class="text-slate-200">/dieta</span> Plan nutricional completo con macros <span class="text-emerald-400">(exclusivo)</span></p>
+        <p><span class="text-slate-200">/perfil</span> Editar perfil</p>
+        <p class="mt-2 text-sky-300"><i class="fas fa-minus-circle mr-1"></i> Sin /usuarios, /membresias, /entrenadores, /reportes</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6">
+    <h3 class="font-semibold mb-4"><i class="fas fa-vial mr-2 text-indigo-400"></i>Matriz de Funcionalidades por Rol</h3>
+    <div class="overflow-x-auto">
+      <table class="w-full text-xs">
+        <thead><tr class="text-slate-400 border-b border-slate-700"><th class="text-left py-2 pr-4">Funcionalidad</th><th class="text-center py-2 pr-4">Admin</th><th class="text-center py-2 pr-4">Entrenador</th><th class="text-center py-2">Miembro</th></tr></thead>
+        <tbody>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">CRUD usuarios</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">CRUD membresías</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">CRUD entrenadores</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">CRUD rutinas</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Asignar rutina</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Ver rutina asignada</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 text-emerald-400">✅</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Tabla asistencia mensual</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Reiniciar semana</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Marcar asistencia propia</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 text-emerald-400">✅</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">CRUD horarios</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Reservar clase (cualquiera)</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Reservar clase (propia)</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 text-emerald-400">✅</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Valoración física</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Plan nutricional / Dieta</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 pr-4 text-rose-500">—</td><td class="text-center py-2 text-emerald-400">✅</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Reportes (4 secciones)</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 text-rose-500">—</td></tr>
+          <tr class="border-b border-slate-800 border-transparent"><td class="py-2 pr-4">Editar perfil propio</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 pr-4 text-emerald-400">✅</td><td class="text-center py-2 text-emerald-400">✅</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="evidencias" class="mb-16 anim-on d2">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-images text-indigo-400 mr-3"></i>Evidencias Visuales</h2>
+
+  <div class="mb-8 flex flex-wrap gap-2 text-sm">
+    <button class="px-4 py-1.5 rounded-lg text-xs font-medium bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 active" data-gallery="all" onclick="filterGallery('all',this)">Todas</button>
+    <button class="px-4 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-400 border border-transparent" data-gallery="admin" onclick="filterGallery('admin',this)"><i class="fas fa-user-shield mr-1"></i>Admin <span class="text-slate-500">(22)</span></button>
+    <button class="px-4 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-400 border border-transparent" data-gallery="entrenador" onclick="filterGallery('entrenador',this)"><i class="fas fa-user-tie mr-1"></i>Entrenador <span class="text-slate-500">(14)</span></button>
+    <button class="px-4 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-400 border border-transparent" data-gallery="miembro" onclick="filterGallery('miembro',this)"><i class="fas fa-user mr-1"></i>Miembro <span class="text-slate-500">(7)</span></button>
+  </div>
+
+  <div id="galeria" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+  </div>
+</section>
+
+<section id="calidad" class="mb-16 anim-on d3">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-clipboard-check text-indigo-400 mr-3"></i>Evaluación ISO/IEC 25010</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+      <div>
+        <span class="text-5xl font-extrabold text-amber-400">73.30</span>
+        <span class="text-slate-400 text-xl ml-2">/ 100</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="px-4 py-2 rounded-full text-sm font-semibold bg-amber-500/20 text-amber-300 border border-amber-500/30"><i class="fas fa-star mr-1"></i>Bueno</span>
+        <div class="flex gap-1">
+          <span class="w-3 h-3 rounded-full bg-rose-500/40"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-500/40"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-400"></span>
+          <span class="w-3 h-3 rounded-full bg-emerald-500/40"></span>
+        </div>
+      </div>
+    </div>
+    <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
+      <div class="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-400" style="width:73.3%"></div>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-6 mb-6">
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-4">Puntajes por Característica</h3>
+      <div class="space-y-3">
+        <div><div class="flex justify-between text-xs mb-1"><span>Idoneidad funcional <span class="text-slate-500">(25 pts)</span></span><span class="text-emerald-400 font-bold">25.00</span></div><div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-emerald-500 to-emerald-400" style="width:100%"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span>Fiabilidad <span class="text-slate-500">(15 pts)</span></span><span class="text-indigo-400 font-bold">11.25</span></div><div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-indigo-500 to-indigo-400" style="width:75%"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span>Eficiencia de desempeño <span class="text-slate-500">(15 pts)</span></span><span class="text-amber-400 font-bold">10.00</span></div><div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-400" style="width:66.7%"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span>Usabilidad <span class="text-slate-500">(15 pts)</span></span><span class="text-emerald-400 font-bold">11.25</span></div><div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-emerald-500 to-emerald-400" style="width:75%"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span>Seguridad <span class="text-slate-500">(15 pts)</span></span><span class="text-rose-400 font-bold">6.00</span></div><div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-rose-500 to-rose-400" style="width:40%"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span>Compatibilidad <span class="text-slate-500">(5 pts)</span></span><span class="text-sky-400 font-bold">4.38</span></div><div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-sky-500 to-sky-400" style="width:87.5%"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span>Mantenibilidad <span class="text-slate-500">(5 pts)</span></span><span class="text-amber-400 font-bold">2.50</span></div><div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-400" style="width:50%"></div></div></div>
+        <div><div class="flex justify-between text-xs mb-1"><span>Portabilidad <span class="text-slate-500">(5 pts)</span></span><span class="text-amber-400 font-bold">2.92</span></div><div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden"><div class="h-full rounded-full bg-gradient-to-r from-amber-500 to-amber-400" style="width:58.3%"></div></div></div>
+      </div>
+    </div>
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold mb-4">Radar de Calidad</h3>
+      <canvas id="radarChart" height="260"></canvas>
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6">
+    <h3 class="font-semibold mb-4">Detalle por Subcaracterística</h3>
+    <div class="overflow-x-auto max-h-80 overflow-y-auto custom-scroll">
+      <table class="w-full text-xs">
+        <thead class="sticky top-0 bg-slate-900"><tr class="text-slate-400 border-b border-slate-700"><th class="text-left py-2 pr-4">Característica</th><th class="text-left py-2 pr-4">Subcaracterística</th><th class="text-center py-2 pr-4 w-20">Score</th><th class="text-center py-2 w-20">Esperado</th></tr></thead>
+        <tbody>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4 font-medium text-emerald-300" rowspan="3">Idoneidad funcional</td><td class="py-2 pr-4">Completitud funcional</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">4</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Corrección funcional</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">4</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Pertinencia funcional</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">4</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4 font-medium text-indigo-300" rowspan="4">Fiabilidad</td><td class="py-2 pr-4">Madurez</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">4</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Disponibilidad</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">4</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Tolerancia a fallos</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Recuperabilidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4 font-medium text-amber-300" rowspan="3">Eficiencia</td><td class="py-2 pr-4">Comportamiento temporal</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">3</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Uso de recursos</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">3</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Capacidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4 font-medium text-emerald-300" rowspan="6">Usabilidad</td><td class="py-2 pr-4">Reconocibilidad</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">4</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Aprendizaje</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">3</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Operabilidad</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">4</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Protección errores usuario</td><td class="text-center py-2 pr-4 text-rose-400 font-bold">1</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Estética</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">3</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Accesibilidad</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">3</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4 font-medium text-rose-300" rowspan="5">Seguridad</td><td class="py-2 pr-4">Confidencialidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Integridad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">No repudio</td><td class="text-center py-2 pr-4 text-rose-400 font-bold">1</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Responsabilidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Autenticidad</td><td class="text-center py-2 pr-4 text-rose-400 font-bold">1</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4 font-medium text-sky-300" rowspan="2">Compatibilidad</td><td class="py-2 pr-4">Coexistencia</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">3</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Interoperabilidad</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">4</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4 font-medium text-amber-300" rowspan="5">Mantenibilidad</td><td class="py-2 pr-4">Modularidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Reusabilidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Analizabilidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Modificabilidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-4">Testeabilidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800 border-transparent"><td class="py-2 pr-4 font-medium text-amber-300" rowspan="3">Portabilidad</td><td class="py-2 pr-4">Adaptabilidad</td><td class="text-center py-2 pr-4 text-emerald-400 font-bold">3</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800 border-transparent"><td class="py-2 pr-4">Instalabilidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+          <tr class="border-b border-slate-800 border-transparent"><td class="py-2 pr-4">Reemplazabilidad</td><td class="text-center py-2 pr-4 text-amber-400 font-bold">2</td><td class="text-center py-2 text-slate-500">4</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="api" class="mb-16 anim-on d3">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-plug text-indigo-400 mr-3"></i>Pruebas de API REST</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <div class="grid md:grid-cols-4 gap-4 text-center text-sm mb-6">
+      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-indigo-400 block">11</span>Endpoints</div>
+      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-emerald-400 block">20</span>Aserciones</div>
+      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-emerald-400 block">14</span><span class="text-emerald-400/60"> PASS</span></div>
+      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-rose-400 block">6</span><span class="text-rose-400/60"> FAIL</span></div>
+    </div>
+
+    <div class="mb-6 overflow-x-auto">
+      <table class="w-full text-xs">
+        <thead><tr class="text-slate-400 border-b border-slate-700"><th class="text-left py-2 pr-3">#</th><th class="text-left py-2 pr-3">Método</th><th class="text-left py-2 pr-3">Endpoint</th><th class="text-center py-2 pr-3">Estado</th><th class="text-center py-2">Ver</th></tr></thead>
+        <tbody id="api-endpoints">
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">1</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-sky-500/20 text-sky-300">POST</span></td><td class="py-2 pr-3 font-mono">/api/auth/login</td><td class="text-center py-2 pr-3"><span class="text-emerald-400">✅ 200</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det1")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det1" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs"><span class="text-emerald-400">Solicitud:</span> POST /api/auth/login<br>{<br>&nbsp;&nbsp;"email": "admin@gympro.com",<br>&nbsp;&nbsp;"password": "Admin1234!"<br>}<br><br><span class="text-emerald-400">Respuesta:</span> 200 OK<br>{<br>&nbsp;&nbsp;"success": true,<br>&nbsp;&nbsp;"user": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br>&nbsp;&nbsp;&nbsp;&nbsp;"nombre": "Admin",<br>&nbsp;&nbsp;&nbsp;&nbsp;"rol": "admin"<br>&nbsp;&nbsp;}<br>}<br><span class="text-slate-500">Set-Cookie: session=...; HttpOnly; Path=/</span></div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">2</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/usuarios</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det2")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det2" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs"><span class="text-rose-400">Falla en aserción:</span> Response is array<br><br>El endpoint retorna HTML (página de login) porque no se envió cookie de sesión. Para probar correctamente los endpoints protegidos se requiere autenticación previa con POST /api/auth/login.</div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">3</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/rutinas</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det3")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det3" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa, el servidor redirige al login devolviendo HTML en vez del JSON array esperado.</div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">4</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/membresias</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det4")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det4" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">5</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/asistencia</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det5")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det5" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">6</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/reportes/asistencia-mensual</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det6")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det6" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="p-4 rounded-lg bg-amber-900/20 border border-amber-500/20 text-xs text-amber-300">
+      <i class="fas fa-circle-info mr-1"></i> <strong>Nota:</strong> Los 6 fallos corresponden a endpoints protegidos que retornan HTML (login) en vez de JSON array cuando se consultan sin cookie de sesión. Esto es esperable: la colección Newman no incluye autenticación previa. El resto de aserciones (códigos HTTP, headers, logout) pasaron correctamente.
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6">
+    <h3 class="font-semibold mb-4"><i class="fas fa-bolt mr-2 text-emerald-400"></i>Probar API en vivo</h3>
+    <p class="text-xs text-slate-400 mb-4">Haz clic para probar los endpoints directamente desde el informe. Se realizan peticiones reales a la API de GymPro.</p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <button onclick="testEndpoint('POST','/api/auth/login',JSON.stringify({email:'admin@gympro.com',password:'Admin1234!'}))" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500/20 text-sky-300 border border-sky-500/30 hover:bg-sky-500/30 transition"><i class="fas fa-play mr-1"></i>POST /api/auth/login</button>
+      <button onclick="testEndpoint('GET','/api/usuarios')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/usuarios</button>
+      <button onclick="testEndpoint('GET','/api/membresias')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/membresias</button>
+      <button onclick="testEndpoint('GET','/api/rutinas')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/rutinas</button>
+      <button onclick="testEndpoint('GET','/api/asistencia')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/asistencia</button>
+      <button onclick="testEndpoint('GET','/api/reportes/asistencia-mensual')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/reportes/asistencia-mensual</button>
+      <button onclick="document.getElementById('api-result').classList.add('hidden')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-400 hover:bg-slate-600 transition"><i class="fas fa-eraser mr-1"></i>Limpiar</button>
+    </div>
+    <div id="api-result" class="hidden"><div class="flex items-center gap-2 mb-2"><span id="api-badge" class="px-2 py-0.5 rounded text-xs font-bold"></span><span id="api-url" class="text-xs font-mono text-slate-400"></span></div><div id="api-response" class="code-block text-xs max-h-60 overflow-y-auto"></div></div>
+    <div id="api-loading" class="hidden text-center py-4 text-slate-400"><i class="fas fa-spinner fa-spin mr-2"></i>Consultando API...</div>
+  </div>
+</section>
+
+<section id="defectos" class="mb-16 anim-on d3">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-bug text-indigo-400 mr-3"></i>Registro de Defectos</h2>
+  <div class="glass rounded-xl overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead><tr class="bg-slate-800 text-slate-300 text-xs uppercase tracking-wider"><th class="text-left py-3 px-4">ID</th><th class="text-left py-3 px-4">Módulo</th><th class="text-left py-3 px-4">Severidad</th><th class="text-left py-3 px-4 hidden lg:table-cell">Descripción</th><th class="text-left py-3 px-4 hidden md:table-cell">Evidencia</th><th class="text-center py-3 px-4">Estado</th></tr></thead>
+        <tbody>
+          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs font-bold text-rose-400">D-001</td><td class="py-3 px-4">Login</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-rose-500/20 text-rose-300 border border-rose-500/20">Crítica</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">CAPTCHA bypass: el captcha solo se valida en cliente (JS). POST directo a /api/auth/login autentica sin resolver el captcha.</td><td class="py-3 px-4 hidden md:table-cell"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick="openLightbox('evidencias/admin/00_login.png')"><i class="fas fa-image mr-1"></i>Ver</button></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-rose-900/30 text-rose-300 border border-rose-500/20">Abierto</span></td></tr>
+          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs text-slate-300">D-002</td><td class="py-3 px-4">Login</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-500/20 text-slate-300 border border-slate-500/20">Baja</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Cookie de sesión sin flag Secure. La aplicación corre 100% sobre HTTPS, pero el flag no está presente.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
+          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs text-slate-300">D-003</td><td class="py-3 px-4">API</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-amber-500/20 text-amber-300 border border-amber-500/20">Media</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Input malformed JSON causa HTTP 500. Enviar payload con operadores MongoDB ($ne) produce error interno. Backend es SQLite.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
+          <tr class="border-b border-slate-800 border-transparent hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs font-bold text-orange-400">D-004</td><td class="py-3 px-4">API</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-orange-500/20 text-orange-300 border border-orange-500/20">Alta</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Fuga de datos entre roles: un miembro autenticado puede acceder a /api/membresias, /api/asistencia y /api/rutinas y ver datos de todos los usuarios.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="conclusiones" class="mb-16 anim-on d4">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-list-check text-indigo-400 mr-3"></i>Conclusiones y Recomendaciones</h2>
+  <div class="grid md:grid-cols-2 gap-6 mb-6">
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold text-emerald-400 mb-4"><i class="fas fa-thumbs-up mr-2"></i>Fortalezas</h3>
+      <ul class="space-y-2 text-sm text-slate-300">
+        <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i><strong>119 pruebas funcionales PASS (100%)</strong> — todos los módulos operativos y funcionales</li>
+        <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i>Cobertura completa de <strong>3 roles</strong> con 21 rutas documentadas y diferencias de privilegios correctas</li>
+        <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i>API REST funcional con <strong>11 endpoints</strong> verificados</li>
+        <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i>Tiempos de respuesta rápidos: <strong>avg 554 ms</strong> (JMeter, 150 peticiones)</li>
+        <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i>Diseño responsivo funcional en todos los viewports probados</li>
+        <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i><strong>Sin vulnerabilidades críticas/altas/medias</strong> detectadas por OWASP ZAP</li>
+        <li><i class="fas fa-check-circle text-emerald-400 mr-2"></i>Documentación completa: mapas de URL para 3 roles, 43 capturas de evidencia</li>
+      </ul>
+    </div>
+    <div class="glass rounded-xl p-6">
+      <h3 class="font-semibold text-rose-400 mb-4"><i class="fas fa-triangle-exclamation mr-2"></i>Debilidades</h3>
+      <ul class="space-y-2 text-sm text-slate-300">
+        <li><i class="fas fa-times-circle text-rose-400 mr-2"></i>CAPTCHA solo <em>client-side</em> — se autentica sin resolverlo vía API directa <span class="text-rose-400 text-xs">(D-001)</span></li>
+        <li><i class="fas fa-times-circle text-rose-400 mr-2"></i>API sin filtro por rol — fuga de datos entre usuarios <span class="text-rose-400 text-xs">(D-004)</span></li>
+        <li><i class="fas fa-times-circle text-rose-400 mr-2"></i>Cookie de sesión sin flag Secure <span class="text-rose-400 text-xs">(D-002)</span></li>
+        <li><i class="fas fa-times-circle text-rose-400 mr-2"></i>Sin protección anti-CSRF ni autenticación JWT</li>
+        <li><i class="fas fa-times-circle text-rose-400 mr-2"></i>Tolerancia a fallos y recuperabilidad no verificables sin entorno de pruebas controlado</li>
+        <li><i class="fas fa-times-circle text-rose-400 mr-2"></i>Código <em>inline JS</em> sin separación de capas (dificulta mantenibilidad)</li>
+        <li><i class="fas fa-times-circle text-rose-400 mr-2"></i>Capacidad probada solo hasta 10 usuarios concurrentes</li>
+      </ul>
+    </div>
+  </div>
+  <div class="glass rounded-xl p-6">
+    <h3 class="font-semibold text-indigo-400 mb-4"><i class="fas fa-lightbulb mr-2"></i>Recomendaciones</h3>
+    <div class="grid md:grid-cols-2 gap-4 text-sm">
+      <ol class="space-y-2 text-slate-300 list-decimal list-inside">
+        <li>Implementar validación <strong>server-side</strong> del captcha <span class="text-rose-400">(crítico)</span></li>
+        <li>Filtrar datos de API por rol para evitar fuga de información</li>
+        <li>Agregar flag <code class="text-indigo-300">Secure</code> a la cookie de sesión</li>
+        <li>Implementar autenticación con JWT y protección CSRF</li>
+      </ol>
+      <ol class="space-y-2 text-slate-300 list-decimal list-inside" start="5">
+        <li>Separar lógica JS en módulos para mejorar testeabilidad y mantenibilidad</li>
+        <li>Realizar pruebas de carga con mayor concurrencia (&gt;50 usuarios)</li>
+        <li>Implementar registro de auditoría con trazabilidad por usuario</li>
+        <li>Establecer pruebas de recuperación y tolerancia a fallos en entorno controlado</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="glass-dark border-t border-slate-800 py-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-slate-500">
+    <p class="mb-2"><i class="fas fa-shield-alt mr-2 text-indigo-400"></i>Informe de Aseguramiento de Calidad de Software — GymPro</p>
+    <p>Generado el 20 de junio de 2026 · Sistema: <code class="text-indigo-300">gestion-gympro.up.railway.app</code></p>
+    <p class="mt-1 text-xs">ISO/IEC 25010:2011 — SQuaRE · Selenium WebDriver 4.45 · Newman 6.2.2 · JMeter 5.6.3 · OWASP ZAP 2.17.0</p>
+    <p class="mt-3 text-xs text-slate-600">Dashboard interactivo con datos reales — las pruebas de API en vivo consultan el sistema directamente</p>
+  </div>
+</footer>
+
+<script>
+const GALLERY = {
+  admin: [
+    ["00_login.png","Login administrador"],["01_inicio.png","Dashboard inicio"],["02_usuarios.png","Lista usuarios"],
+    ["02a_usuarios_modal_nuevo.png","Modal nuevo usuario"],["02b_usuarios_modal_editar.png","Modal editar usuario"],
+    ["03_membresias.png","Lista membresías"],["03a_membresias_tipos.png","Modal tipos de plan"],["03b_membresias_nueva.png","Modal nueva membresía"],
+    ["04_entrenadores.png","Lista entrenadores"],["04a_entrenadores_modal_nuevo.png","Modal nuevo entrenador"],["04b_entrenadores_modal_editar.png","Modal editar entrenador"],
+    ["05_rutinas.png","Lista rutinas"],["05a_rutinas_modal_nueva.png","Modal nueva rutina"],["05b_rutinas_modal_asignar.png","Modal asignar rutina"],
+    ["05c_rutinas_detalle.png","Detalle ejercicios"],["06_asistencia.png","Asistencia mensual"],["07_horarios.png","Horarios"],
+    ["07a_horarios_modal_nuevo.png","Modal nuevo horario"],["07b_horarios_reservar.png","Modal reservar"],["08_reportes.png","Reportes"],
+    ["09_perfil.png","Perfil administrador"],["10_logout.png","Logout"]
+  ],
+  entrenador: [
+    ["00_login.png","Login entrenador"],["01_inicio.png","Dashboard entrenador"],["01a_inicio_asistencia_marcada.png","Asistencia marcada"],
+    ["02_asistencia.png","Asistencia mensual"],["03_horarios.png","Horarios"],["03a_horarios_filtro_clases.png","Filtro clases"],
+    ["03b_horarios_modal_nuevo.png","Modal nuevo horario"],["03c_horarios_reservar.png","Modal reservar"],
+    ["04_rutinas.png","Rutinas"],["04a_rutinas_modal_nueva.png","Modal nueva rutina"],["04b_rutinas_detalle.png","Detalle ejercicios"],
+    ["05_valoracion.png","Valoración física"],["06_reportes.png","Reportes"],["07_perfil.png","Perfil entrenador"]
+  ],
+  miembro: [
+    ["00_login.png","Login miembro"],["01_inicio.png","Dashboard miembro"],["02_rutinas.png","Rutina asignada"],
+    ["03_asistencia.png","Asistencia"],["04_horarios.png","Horarios"],["05_dieta.png","Plan nutricional"],
+    ["06_perfil.png","Perfil miembro"]
+  ]
+};
+
+function renderGallery(role) {
+  const g = document.getElementById('galeria');
+  g.innerHTML = '';
+  const items = role === 'all' ? [...GALLERY.admin.map(x=>['admin/'+x[0],x[1],'admin']), ...GALLERY.entrenador.map(x=>['entrenador/'+x[0],x[1],'entrenador']), ...GALLERY.miembro.map(x=>['miembro/'+x[0],x[1],'miembro'])] : (role === 'admin' ? GALLERY.admin.map(x=>['admin/'+x[0],x[1],'admin']) : role === 'entrenador' ? GALLERY.entrenador.map(x=>['entrenador/'+x[0],x[1],'entrenador']) : GALLERY.miembro.map(x=>['miembro/'+x[0],x[1],'miembro']));
+  items.forEach(([path,label,rol]) => {
+    const bg = rol==='admin'?'bg-indigo-500/10 border-indigo-500/20':rol==='entrenador'?'bg-purple-500/10 border-purple-500/20':'bg-sky-500/10 border-sky-500/20';
+    const col = rol==='admin'?'text-indigo-300':rol==='entrenador'?'text-purple-300':'text-sky-300';
+    g.innerHTML += `<div class="glass rounded-lg p-2 hover-lift ${bg} border"><img src="evidencias/${path}" alt="${label}" class="rounded-md thumb w-full aspect-[4/3] object-cover" onclick="openLightbox('evidencias/${path}')"><p class="text-xs mt-1.5 text-center ${col} truncate">${label}</p></div>`;
+  });
+}
+
+function filterGallery(role, btn) {
+  document.querySelectorAll('[data-gallery]').forEach(b => { b.className = 'px-4 py-1.5 rounded-lg text-xs font-medium bg-slate-800 text-slate-400 border border-transparent'; });
+  btn.className = 'px-4 py-1.5 rounded-lg text-xs font-medium bg-indigo-500/20 text-indigo-300 border border-indigo-500/30';
+  renderGallery(role);
+}
+
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').style.display = 'flex';
+}
+
+function switchTab(tabId, btn) {
+  document.querySelectorAll('.tab-btn').forEach(b => { b.className = 'tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30'; });
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
+  btn.className = 'tab-btn active px-4 py-2 rounded-lg text-xs font-medium border border-indigo-500/30 text-indigo-300';
+  document.getElementById(tabId).classList.remove('hidden');
+}
+
+function toggleApiDetail(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('hidden');
+}
+
+async function testEndpoint(method, url, body) {
+  const resultDiv = document.getElementById('api-result');
+  const loadingDiv = document.getElementById('api-loading');
+  const badge = document.getElementById('api-badge');
+  const apiUrl = document.getElementById('api-url');
+  const responseDiv = document.getElementById('api-response');
+  resultDiv.classList.add('hidden');
+  loadingDiv.classList.remove('hidden');
+  try {
+    const opts = { method, headers: { 'Content-Type': 'application/json' } };
+    if (body) opts.body = body;
+    const start = performance.now();
+    const res = await fetch('https://gestion-gympro.up.railway.app' + url, opts);
+    const elapsed = Math.round(performance.now() - start);
+    const text = await res.text();
+    let display = text.length > 2000 ? text.slice(0,2000) + '\n... (truncado, ' + text.length + ' chars)' : text;
+    try { display = JSON.stringify(JSON.parse(text), null, 2); } catch(e) {}
+    const statusClass = res.ok ? 'bg-emerald-500/20 text-emerald-300' : res.status >= 400 ? 'bg-rose-500/20 text-rose-300' : 'bg-amber-500/20 text-amber-300';
+    badge.className = 'px-2 py-0.5 rounded text-xs font-bold ' + statusClass;
+    badge.textContent = res.status + ' (' + elapsed + 'ms)';
+    apiUrl.textContent = method + ' ' + url;
+    responseDiv.textContent = display;
+    resultDiv.classList.remove('hidden');
+  } catch(e) {
+    badge.className = 'px-2 py-0.5 rounded text-xs font-bold bg-rose-500/20 text-rose-300';
+    badge.textContent = 'Error';
+    apiUrl.textContent = method + ' ' + url;
+    responseDiv.textContent = 'Error de conexión: ' + e.message + '\n\nPosibles causas: CORS bloqueado por el navegador, o el servidor no responde.';
+    resultDiv.classList.remove('hidden');
+  }
+  loadingDiv.classList.add('hidden');
+}
+
+new Chart(document.getElementById('radarChart'), {
+  type: 'radar',
+  data: {
+    labels: ['Idoneidad\nFuncional','Fiabilidad','Eficiencia\nDesempeño','Usabilidad','Seguridad','Compatibilidad','Mantenibilidad','Portabilidad'],
+    datasets: [{
+      label: 'Obtenido', data: [4.00,3.00,2.67,3.00,1.60,3.50,2.00,2.33],
+      borderColor: '#818cf8', backgroundColor: 'rgba(129,140,248,0.12)',
+      pointBackgroundColor: '#818cf8', pointBorderColor: '#fff', pointHoverRadius: 6, borderWidth: 2
+    }, {
+      label: 'Esperado', data: [4,4,4,4,4,4,4,4],
+      borderColor: 'rgba(148,163,184,0.3)', backgroundColor: 'rgba(148,163,184,0.03)',
+      pointBackgroundColor: 'rgba(148,163,184,0.3)', borderDash: [4,4], borderWidth: 1.5, pointRadius: 0
+    }]
+  },
+  options: {
+    responsive: true, maintainAspectRatio: true,
+    plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 } } } },
+    scales: {
+      r: {
+        beginAtZero: true, max: 4,
+        ticks: { stepSize: 1, color: '#64748b', backdropColor: 'transparent', font: { size: 10 } },
+        grid: { color: 'rgba(148,163,184,0.12)' },
+        angleLines: { color: 'rgba(148,163,184,0.12)' },
+        pointLabels: { color: '#cbd5e1', font: { size: 10 } }
+      }
+    }
+  }
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', function(e) {
+  e.preventDefault();
+  const t = document.querySelector(this.getAttribute('href'));
+  if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}));
+
+renderGallery('all');
+</script>
 </body>
 </html>
