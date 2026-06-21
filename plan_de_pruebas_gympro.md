@@ -101,13 +101,13 @@ Aplicaremos los pasos de Pressman para el entorno web de GymPro:
 |---|---|---|
 | `curl` | ✅ Listo | Ninguna |
 | Python `requests` | ✅ Listo | Ninguna |
-| Python `pytest` | ❌ No instalado | `pip install pytest` |
-| Python `selenium` | ❌ No instalado | `pip install selenium` |
-| Newman | ❌ No instalado | `npm install -g newman` |
-| JMeter | ❌ No instalado | Descargar e instalar |
-| OWASP ZAP | ❌ No instalado | Descargar e instalar |
+| Python `pytest` | ✅ Instalado | pytest 9.1.1 en `.venv` |
+| Python `selenium` | ✅ Instalado | selenium 4.45.0 + ChromeDriver 149.0.7827.155 |
+| Newman | ✅ Instalado | Newman 6.2.2 |
+| JMeter | ✅ Instalado | JMeter 5.6.3 en `/opt/jmeter` |
+| OWASP ZAP | ✅ Instalado | ZAP 2.17.0 en `/opt/ZAP_2.17.0` |
 
-**Nota:** `curl` y Python `requests` están listos para usar de inmediato sin instalación adicional.
+**Nota:** Todas las herramientas de QA están instaladas y verificadas. Ver `AGENTS.md` para detalles del entorno.
 
 ## 5. Herramientas y Ambiente de QA
 

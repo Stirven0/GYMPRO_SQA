@@ -24,7 +24,7 @@
 | `/api/*` (varios) | GET | 404 | APIs protegidas requieren auth |
 | `/health`, `/api/health` | GET | 404 | No existe |
 | `/register`, `/signup` | GET | 404 | No existe registro público |
-| `/admin`, `/dashboard` | GET | 404 | Rutas protegidas |
+| `/admin`, `/dashboard` | GET | 302 | Redirigen a `/login` si no hay sesión |
 | `/static/*`, `/package.json`, `/.env` | GET | 404 | Sin exposición de archivos |
 
 ### Funcionalidades (desde landing page)

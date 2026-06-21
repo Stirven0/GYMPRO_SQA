@@ -18,9 +18,9 @@ El sitio web corresponde a la página de acceso (Login) del sistema **GymPro**. 
 
 ---
 
-## 2. Resumen del Informe Técnico (`DOC-20260609-WA0062..pdf`)
+## 2. Resumen del Informe Técnico (`DOC-20260609-WA0062-contenido.md`)
 
-El documento PDF contiene el informe del proyecto **GYMPRO V6**, desarrollado de forma académica por los estudiantes **Islam Quiroz, Leonardo Hernández y María García** de la **Universidad de La Guajira**.
+El documento markdown contiene el informe del proyecto **GYMPRO V6**, desarrollado de forma académica por los estudiantes **Islam Quiroz, Leonardo Hernández y María García** de la **Universidad de La Guajira**.
 
 ### Objetivos del Sistema
 * **General:** Desarrollar una herramienta informática que facilite la administración de gimnasios mediante la automatización de procesos relacionados con la gestión de usuarios, control de asistencia, seguimiento físico y planificación de entrenamientos.

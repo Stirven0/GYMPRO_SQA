@@ -1,0 +1,597 @@
+[
+  {
+    "prueba": "ADM-01: Login admin exitoso",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-02: /inicio carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-03: Acceso rápido 'Nuevo miembro' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-03: Acceso rápido 'Nueva rutina' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-03: Acceso rápido 'Registrar asistencia' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-03: Acceso rápido 'Nueva membresía' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-03: Acceso rápido 'Ver reportes' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-04: /usuarios carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-05: Modal nuevo usuario se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-06: Campo 'n-cedula' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-06: Campo 'n-nombre' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-06: Campo 'n-apellido' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-06: Campo 'n-email' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-06: Campo 'n-password' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-06: Campo 'n-rol' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-07: Filtro 'search' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-07: Filtro 'filtro-rol' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-07: Filtro 'filtro-estado' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-08: ✏ Editar (12 botones)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-09: × Desactivar (12 botones)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-10: 📋 Valoración (11 enlaces)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-11: Modal editar usuario se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-12: /membresias carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-13: Stat 'ACTIVAS' visible",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-13: Stat 'INGRESOS' visible",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-13: Stat 'VENCEN' visible",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-13: Stat 'CONGELADAS' visible",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-14: Modal tipos de plan se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-15: Modal nueva membresía se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-16: ❄ Congelar (10 botones)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-17: × Cancelar (10 botones)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-18: /entrenadores carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-19: Entrenador 'Carlos Mendoza' listado",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-19: Entrenador 'Laura Pérez' listado",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-19: Entrenador 'Roberto Salinas' listado",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-19: Entrenador 'Valentina Torres' listado",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-19: Entrenador 'Andrés Gutiérrez' listado",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-20: Modal nuevo entrenador se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-21: ✏ Editar entrenador (5 botones)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-22: Modal editar entrenador se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-23: /rutinas carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-24: Ver ejercicios (6 botones)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-25: Modal nueva rutina se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-26: Modal asignar rutina se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-27: Modal detalle ejercicios se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-28: /asistencia carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-29: Botón 'Reiniciar semana' presente (solo admin)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-30: toggleDia (77 botones, 12 miembros × 7 días)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-31: /horarios carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-32: Filtro 'f-todos' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-32: Filtro 'f-general' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-32: Filtro 'f-clase' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-32: Filtro 'f-personal' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-33: Modal nuevo horario se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-34: Modal reservar se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-35: Select 'r-usuario' presente (admin reserva para cualquiera)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-36: Botones ver miembros (12)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-36: Botones editar (12)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-36: Botones eliminar (12)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-37: /reportes carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-38: Botón sección 'asistencia' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-38: Botón sección 'miembros' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-38: Botón sección 'carga' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-38: Botón sección 'auditoria' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-39: /perfil carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-40: Botón Editar presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ADM-41: Logout exitoso",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-01: Login entrenador exitoso",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-02: /inicio carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-03: toggleAsist en dashboard (11 botones)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-04: 📋 Valoración (10 enlaces)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-05: Toggle asistencia en dashboard funciona",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-06: /asistencia carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-07: toggleDia (77 botones)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-08: /horarios carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-09: Filtros presentes",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-09: Filtros presentes",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-09: Filtros presentes",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-09: Filtros presentes",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-10: Filtro clases funciona",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-11: Modal nuevo horario se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-12: Modal reservar se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-13: Sin r-usuario (entrenador reserva solo para sí mismo)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-14: /rutinas carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-15: Modal nueva rutina se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-16: Modal detalle ejercicios se abre",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-17: /valoracion/2 carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'evaluador_nombre' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'fecha_valoracion' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'genero' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'objetivo' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'peso_kg' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'estatura_cm' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'porcentaje_grasa' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'nivel_actividad' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'fumador' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-18: Campo 'observaciones' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-19: Botón 'Guardar valoración' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-20: /reportes carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-21: Botón reporte 'asistencia' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-21: Botón reporte 'miembros' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-21: Botón reporte 'carga' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-21: Botón reporte 'auditoria' presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-22: /perfil carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "ENT-23: Botón Editar presente",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-01: Login miembro exitoso",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-02: /inicio carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-03: Sección 'MI ASISTENCIA HOY' visible",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-03: Sección 'MI MEMBRESÍA' visible",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-04: Enlaces sidebar (4 rutas únicas)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-05: /rutinas carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-06: Sin botón '+ Nueva rutina' (correcto)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-07: /asistencia carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-08: Sin botones toggleDia (0) — solo lectura",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-09: /horarios carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-10: Sin botón '+ Nuevo Horario' (correcto)",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-11: /dieta carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-12: /perfil carga",
+    "estado": "PASS",
+    "detalle": ""
+  },
+  {
+    "prueba": "Mie-13: Botón Editar presente",
+    "estado": "PASS",
+    "detalle": ""
+  }
+]
