@@ -42,13 +42,12 @@
     <div class="flex items-center justify-between h-14">
       <span class="text-sm font-semibold tracking-wider text-indigo-400"><i class="fas fa-shield-alt mr-2"></i>GYMPRO · SQA</span>
       <div class="hidden lg:flex space-x-5 text-xs font-medium">
+        <a href="#modelo" class="text-slate-300 hover:text-white transition">Modelo</a>
+        <a href="#software" class="text-slate-300 hover:text-white transition">Software</a>
         <a href="#resumen" class="text-slate-300 hover:text-white transition">Resumen</a>
-        <a href="#metodologia" class="text-slate-300 hover:text-white transition">Metodología</a>
-        <a href="#funcional" class="text-slate-300 hover:text-white transition">Funcional</a>
         <a href="#evidencias" class="text-slate-300 hover:text-white transition">Evidencias</a>
-        <a href="#calidad" class="text-slate-300 hover:text-white transition">ISO 25010</a>
-        <a href="#api" class="text-slate-300 hover:text-white transition">API</a>
         <a href="#defectos" class="text-slate-300 hover:text-white transition">Defectos</a>
+        <a href="#calidad" class="text-slate-300 hover:text-white transition">ISO 25010</a>
         <a href="#conclusiones" class="text-slate-300 hover:text-white transition">Conclusiones</a>
       </div>
     </div>
@@ -86,6 +85,80 @@
 
 <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
+
+<section id="modelo" class="mb-16 anim-on d1">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-book-open text-indigo-400 mr-3"></i>Modelo de Evaluación</h2>
+  <div class="glass rounded-xl p-6 md:p-8">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="font-semibold text-indigo-300 mb-3">ISO/IEC 25010 — SQuaRE</h3>
+        <p class="text-sm text-slate-300 leading-relaxed">
+          La evaluación se realizó utilizando el modelo de calidad de software <strong>ISO/IEC 25010</strong> (Systems and software Quality Requirements and Evaluation — SQuaRE), que define un marco estructurado para evaluar la calidad de productos de software a través de <strong>8 características</strong> y <strong>26 subcaracterísticas</strong>.
+        </p>
+        <div class="mt-4 space-y-2 text-sm">
+          <div class="flex items-center gap-3 p-2 rounded-lg bg-slate-800"><span class="w-2 h-2 rounded-full bg-emerald-400"></span><span class="text-slate-300"><strong>Idoneidad funcional</strong> — Completitud, corrección y pertinencia de las funciones</span></div>
+          <div class="flex items-center gap-3 p-2 rounded-lg bg-slate-800"><span class="w-2 h-2 rounded-full bg-indigo-400"></span><span class="text-slate-300"><strong>Fiabilidad</strong> — Madurez, disponibilidad, tolerancia a fallos, recuperabilidad</span></div>
+          <div class="flex items-center gap-3 p-2 rounded-lg bg-slate-800"><span class="w-2 h-2 rounded-full bg-amber-400"></span><span class="text-slate-300"><strong>Eficiencia de desempeño</strong> — Tiempo de respuesta, uso de recursos, capacidad</span></div>
+          <div class="flex items-center gap-3 p-2 rounded-lg bg-slate-800"><span class="w-2 h-2 rounded-full bg-sky-400"></span><span class="text-slate-300"><strong>Usabilidad</strong> — Reconocibilidad, aprendizaje, operabilidad, protección contra errores</span></div>
+          <div class="flex items-center gap-3 p-2 rounded-lg bg-slate-800"><span class="w-2 h-2 rounded-full bg-rose-400"></span><span class="text-slate-300"><strong>Seguridad</strong> — Confidencialidad, integridad, no repudio, autenticidad</span></div>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-semibold text-indigo-300 mb-3">Metodología de puntuación</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+          Cada subcaracterística se puntúa en una escala de 1 a 4 (Malo · Regular · Bueno · Excelente). Las puntuaciones se promedian por característica y se ponderan según el peso asignado en el modelo, sumando un máximo de <strong>100 puntos</strong>.
+        </p>
+        <div class="p-4 rounded-lg bg-slate-800">
+          <div class="flex justify-between text-xs mb-2"><span class="text-slate-400">Rango</span><span class="text-slate-400">Clasificación</span></div>
+          <div class="flex justify-between text-xs py-1 border-b border-slate-700"><span>90 – 100</span><span class="text-emerald-400 font-medium">Excelente</span></div>
+          <div class="flex justify-between text-xs py-1 border-b border-slate-700"><span>70 – 89</span><span class="text-amber-400 font-medium">Bueno</span></div>
+          <div class="flex justify-between text-xs py-1 border-b border-slate-700"><span>50 – 69</span><span class="text-orange-400 font-medium">Regular</span></div>
+          <div class="flex justify-between text-xs py-1"><span>&lt; 50</span><span class="text-rose-400 font-medium">Malo</span></div>
+        </div>
+        <p class="mt-3 text-xs text-slate-400">
+          <i class="fas fa-check-circle text-emerald-400 mr-1"></i> Puntaje obtenido: <strong class="text-emerald-300">73.30 / 100 — Bueno</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="software" class="mb-16 anim-on d1">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-server text-indigo-400 mr-3"></i>Software Evaluado</h2>
+  <div class="glass rounded-xl p-6 md:p-8">
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="md:col-span-2">
+        <h3 class="font-semibold text-indigo-300 mb-3">GymPro — Sistema de Gestión Deportiva</h3>
+        <p class="text-sm text-slate-300 leading-relaxed mb-4">
+          GymPro es una aplicación web desarrollada con Flask (Python) y SQLite que automatiza la administración de gimnasios. Proporciona un panel de control diferenciado para tres roles — administrador, entrenador y miembro — permitiendo la gestión integral de usuarios, membresías, rutinas de entrenamiento, asistencia en tiempo real, valoraciones físicas, horarios con reserva de clases y planes nutricionales personalizados.
+        </p>
+        <div class="grid grid-cols-2 gap-3 text-sm">
+          <div class="p-3 rounded-lg bg-slate-800"><p class="text-xs text-slate-400">Stack tecnológico</p><p class="text-slate-200 font-medium">Flask + SQLite + HTML/JS vanilla</p></div>
+          <div class="p-3 rounded-lg bg-slate-800"><p class="text-xs text-slate-400">Despliegue</p><p class="text-slate-200 font-medium">Railway.app</p></div>
+          <div class="p-3 rounded-lg bg-slate-800"><p class="text-xs text-slate-400">Roles</p><p class="text-slate-200 font-medium">Administrador · Entrenador · Miembro</p></div>
+          <div class="p-3 rounded-lg bg-slate-800"><p class="text-xs text-slate-400">URL de pruebas</p><p class="text-indigo-300 font-medium text-xs break-all">https://gestion-gympro.up.railway.app</p></div>
+        </div>
+      </div>
+      <div class="flex flex-col justify-center">
+        <div class="p-5 rounded-xl bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 text-center">
+          <i class="fas fa-dumbbell text-4xl text-indigo-400 mb-3"></i>
+          <p class="text-sm font-medium text-indigo-300">Módulos funcionales</p>
+          <div class="flex flex-wrap justify-center gap-1.5 mt-3 text-xs">
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-300">Usuarios</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-300">Membresías</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-300">Rutinas</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-300">Asistencia</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-300">Valoración</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-300">Horarios</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-300">Reportes</span>
+            <span class="px-2 py-1 rounded bg-slate-800 text-slate-300">Dieta</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="resumen" class="mb-16 anim-on">
   <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-chart-pie text-indigo-400 mr-3"></i>Resumen Ejecutivo</h2>
   <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -111,18 +184,41 @@
     </div>
   </div>
 
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    <div class="glass rounded-xl p-5 border-l-4 border-emerald-500">
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-3"><i class="fas fa-cogs mr-1"></i>Pruebas Funcionales</h3>
+      <div class="grid grid-cols-2 gap-3 text-sm">
+        <div class="p-3 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-emerald-400 block">119</span><span class="text-xs text-slate-400">Automatizadas Selenium</span></div>
+        <div class="p-3 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-emerald-400 block">77</span><span class="text-xs text-slate-400">Casos de prueba únicos</span></div>
+        <div class="p-3 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-sky-400 block">21</span><span class="text-xs text-slate-400">Rutas cubiertas</span></div>
+        <div class="p-3 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-purple-400 block">3</span><span class="text-xs text-slate-400">Roles (Admin/Entrenador/Miembro)</span></div>
+      </div>
+      <p class="text-xs text-slate-400 mt-3"><i class="fas fa-check text-emerald-400 mr-1"></i> Verifican que el sistema <strong class="text-slate-200">hace lo que debe hacer</strong>: CRUD, navegación, modales, formularios, botones, flujos por rol.</p>
+    </div>
+    <div class="glass rounded-xl p-5 border-l-4 border-indigo-500">
+      <h3 class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-3"><i class="fas fa-chart-line mr-1"></i>Pruebas No Funcionales</h3>
+      <div class="grid grid-cols-2 gap-3 text-sm">
+        <div class="p-3 rounded-lg bg-slate-800"><span class="text-xl font-bold text-amber-400 block">150</span><span class="text-xs text-slate-400">Peticiones carga (JMeter)</span></div>
+        <div class="p-3 rounded-lg bg-slate-800"><span class="text-xl font-bold text-amber-400 block">11</span><span class="text-xs text-slate-400">Endpoints API (Newman)</span></div>
+        <div class="p-3 rounded-lg bg-slate-800"><span class="text-xl font-bold text-sky-400 block">26</span><span class="text-xs text-slate-400">Subcaracterísticas ISO 25010</span></div>
+        <div class="p-3 rounded-lg bg-slate-800"><span class="text-xl font-bold text-emerald-400 block">0</span><span class="text-xs text-slate-400">Alertas críticas ZAP</span></div>
+      </div>
+      <p class="text-xs text-slate-400 mt-3"><i class="fas fa-check text-indigo-400 mr-1"></i> Evalúan <strong class="text-slate-200">cómo se comporta</strong> el sistema: rendimiento, seguridad, usabilidad, fiabilidad, mantenibilidad.</p>
+    </div>
+  </div>
+
   <div class="glass rounded-xl p-6 md:p-8">
     <div class="grid md:grid-cols-2 gap-8">
       <div>
         <h3 class="font-semibold mb-3 flex items-center"><i class="fas fa-clipboard-list text-indigo-400 mr-2"></i>Alcance de la Evaluación</h3>
         <ul class="space-y-2 text-sm text-slate-300">
-          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>119 pruebas funcionales</strong> automatizadas con Selenium WebDriver cubriendo 21 rutas en 3 roles</li>
-          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>Evaluación ISO/IEC 25010</strong> (SQuaRE) — 8 características, 26 subcaracterísticas</li>
-          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>Pruebas de API REST</strong> con Newman (11 endpoints, 20 aserciones)</li>
-          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>Pruebas de carga</strong> con JMeter (150 peticiones, 10 usuarios concurrentes)</li>
-          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>Escaneo de seguridad</strong> con OWASP ZAP (0 alertas críticas/altas)</li>
-          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>18 pruebas de humo/sanidad</strong> verificando disponibilidad del sistema</li>
-          <li><i class="fas fa-check-circle text-emerald-400 mr-2 text-xs"></i><strong>43 capturas de pantalla</strong> como evidencia visual del funcionamiento</li>
+          <li class="flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0"><i class="fas fa-cogs text-emerald-400 text-[8px]"></i></span><span><strong>119 pruebas funcionales</strong> automatizadas con Selenium WebDriver cubriendo 21 rutas en 3 roles</span></li>
+          <li class="flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full bg-indigo-500/20 flex items-center justify-center flex-shrink-0"><i class="fas fa-chart-line text-indigo-400 text-[8px]"></i></span><span><strong>Evaluación ISO/IEC 25010</strong> (SQuaRE) — 8 características, 26 subcaracterísticas</span></li>
+          <li class="flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full bg-indigo-500/20 flex items-center justify-center flex-shrink-0"><i class="fas fa-chart-line text-indigo-400 text-[8px]"></i></span><span><strong>Pruebas de API REST</strong> con Newman (11 endpoints, 20 aserciones)</span></li>
+          <li class="flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full bg-indigo-500/20 flex items-center justify-center flex-shrink-0"><i class="fas fa-chart-line text-indigo-400 text-[8px]"></i></span><span><strong>Pruebas de carga</strong> con JMeter (150 peticiones, 10 usuarios concurrentes)</span></li>
+          <li class="flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full bg-indigo-500/20 flex items-center justify-center flex-shrink-0"><i class="fas fa-chart-line text-indigo-400 text-[8px]"></i></span><span><strong>Escaneo de seguridad</strong> con OWASP ZAP (0 alertas críticas/altas)</span></li>
+          <li class="flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0"><i class="fas fa-cogs text-emerald-400 text-[8px]"></i></span><span><strong>18 pruebas de humo/sanidad</strong> verificando disponibilidad del sistema</span></li>
+          <li class="flex items-start gap-2"><span class="mt-0.5 w-4 h-4 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0"><i class="fas fa-cogs text-emerald-400 text-[8px]"></i></span><span><strong>43 capturas de pantalla</strong> como evidencia visual del funcionamiento</span></li>
         </ul>
       </div>
       <div>
@@ -139,17 +235,17 @@
       </div>
     </div>
   </div>
-</section>
 
-<section id="metodologia" class="mb-16 anim-on d1">
+
+  <section id="metodologia" class="mb-16 anim-on d1">
   <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-flask text-indigo-400 mr-3"></i>Metodología de Pruebas</h2>
 
   <div class="glass rounded-xl p-6 md:p-8">
     <div class="flex flex-wrap gap-2 mb-8">
-      <button class="tab-btn active px-4 py-2 rounded-lg text-xs font-medium border border-indigo-500/30 text-indigo-300" data-tab="funcional-tab" onclick="switchTab('funcional-tab',this)"><i class="fas fa-robot mr-1"></i>Funcionales</button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30" data-tab="api-tab" onclick="switchTab('api-tab',this)"><i class="fas fa-plug mr-1"></i>API</button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30" data-tab="carga-tab" onclick="switchTab('carga-tab',this)"><i class="fas fa-gauge-high mr-1"></i>Carga</button>
-      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30" data-tab="seguridad-tab" onclick="switchTab('seguridad-tab',this)"><i class="fas fa-shield mr-1"></i>Seguridad</button>
+      <button class="tab-btn active px-4 py-2 rounded-lg text-xs font-medium border border-emerald-500/30 text-emerald-300" data-tab="funcional-tab" onclick="switchTab('funcional-tab',this)"><i class="fas fa-robot mr-1"></i><span class="text-[9px] bg-emerald-500/20 px-1.5 py-0.5 rounded mr-1">F</span>Funcionales</button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-indigo-700 text-slate-400 hover:border-indigo-500/30" data-tab="api-tab" onclick="switchTab('api-tab',this)"><i class="fas fa-plug mr-1"></i><span class="text-[9px] bg-indigo-500/20 px-1.5 py-0.5 rounded mr-1">NF</span>API</button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30" data-tab="carga-tab" onclick="switchTab('carga-tab',this)"><i class="fas fa-gauge-high mr-1"></i><span class="text-[9px] bg-indigo-500/20 px-1.5 py-0.5 rounded mr-1">NF</span>Carga</button>
+      <button class="tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30" data-tab="seguridad-tab" onclick="switchTab('seguridad-tab',this)"><i class="fas fa-shield mr-1"></i><span class="text-[9px] bg-indigo-500/20 px-1.5 py-0.5 rounded mr-1">NF</span>Seguridad</button>
     </div>
 
     <div id="funcional-tab" class="tab-content">
@@ -304,9 +400,13 @@
   </div>
 </section>
 
-<section id="funcional" class="mb-16 anim-on d2">
+  <section id="funcional" class="mb-16 anim-on d2">
   <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-robot text-indigo-400 mr-3"></i>Pruebas Funcionales</h2>
 
+  <div class="flex items-center gap-2 mb-4">
+    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">F</span>
+    <span class="text-xs text-slate-400">Pruebas funcionales — verifican que el sistema <strong class="text-slate-200">hace lo que debe hacer</strong></span>
+  </div>
   <div class="glass rounded-xl p-6 mb-6">
     <div class="grid grid-cols-4 gap-3 text-center text-sm">
       <div class="p-4 rounded-lg bg-slate-800"><div class="text-2xl font-bold text-indigo-400">41</div><div class="text-xs text-slate-400">Admin</div></div>
@@ -386,6 +486,64 @@
   </div>
 </section>
 
+  <section id="api" class="mb-16 anim-on d3">
+  <div class="flex items-center gap-2 mb-4">
+    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">NF</span>
+    <span class="text-xs text-slate-400">Pruebas no funcionales — verifican <strong class="text-slate-200">cómo se comporta</strong> el sistema</span>
+  </div>
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-plug text-indigo-400 mr-3"></i>Pruebas de API REST</h2>
+
+  <div class="glass rounded-xl p-6 mb-6">
+    <div class="grid md:grid-cols-4 gap-4 text-center text-sm mb-6">
+      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-indigo-400 block">11</span>Endpoints</div>
+      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-emerald-400 block">20</span>Aserciones</div>
+      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-emerald-400 block">14</span><span class="text-emerald-400/60"> PASS</span></div>
+      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-rose-400 block">6</span><span class="text-rose-400/60"> FAIL</span></div>
+    </div>
+
+    <div class="mb-6 overflow-x-auto">
+      <table class="w-full text-xs">
+        <thead><tr class="text-slate-400 border-b border-slate-700"><th class="text-left py-2 pr-3">#</th><th class="text-left py-2 pr-3">Método</th><th class="text-left py-2 pr-3">Endpoint</th><th class="text-center py-2 pr-3">Estado</th><th class="text-center py-2">Ver</th></tr></thead>
+        <tbody id="api-endpoints">
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">1</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-sky-500/20 text-sky-300">POST</span></td><td class="py-2 pr-3 font-mono">/api/auth/login</td><td class="text-center py-2 pr-3"><span class="text-emerald-400">✅ 200</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det1")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det1" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs"><span class="text-emerald-400">Solicitud:</span> POST /api/auth/login<br>{<br>&nbsp;&nbsp;"email": "admin@gympro.com",<br>&nbsp;&nbsp;"password": "Admin1234!"<br>}<br><br><span class="text-emerald-400">Respuesta:</span> 200 OK<br>{<br>&nbsp;&nbsp;"success": true,<br>&nbsp;&nbsp;"user": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br>&nbsp;&nbsp;&nbsp;&nbsp;"nombre": "Admin",<br>&nbsp;&nbsp;&nbsp;&nbsp;"rol": "admin"<br>&nbsp;&nbsp;}<br>}<br><span class="text-slate-500">Set-Cookie: session=...; HttpOnly; Path=/</span></div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">2</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/usuarios</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det2")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det2" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs"><span class="text-rose-400">Falla en aserción:</span> Response is array<br><br>El endpoint retorna HTML (página de login) porque no se envió cookie de sesión. Para probar correctamente los endpoints protegidos se requiere autenticación previa con POST /api/auth/login.</div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">3</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/rutinas</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det3")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det3" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa, el servidor redirige al login devolviendo HTML en vez del JSON array esperado.</div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">4</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/membresias</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det4")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det4" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">5</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/asistencia</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det5")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det5" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
+          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">6</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/reportes/asistencia-mensual</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det6")'><i class="fas fa-chevron-down"></i></button></td></tr>
+          <tr id="det6" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="p-4 rounded-lg bg-amber-900/20 border border-amber-500/20 text-xs text-amber-300">
+      <i class="fas fa-circle-info mr-1"></i> <strong>Nota:</strong> Los 6 fallos corresponden a endpoints protegidos que retornan HTML (login) en vez de JSON array cuando se consultan sin cookie de sesión. Esto es esperable: la colección Newman no incluye autenticación previa. El resto de aserciones (códigos HTTP, headers, logout) pasaron correctamente.
+    </div>
+  </div>
+
+  <div class="glass rounded-xl p-6">
+    <h3 class="font-semibold mb-4"><i class="fas fa-bolt mr-2 text-emerald-400"></i>Probar API en vivo</h3>
+    <p class="text-xs text-slate-400 mb-4">Haz clic para probar los endpoints directamente desde el informe. Se realizan peticiones reales a la API de GymPro.</p>
+    <div class="flex flex-wrap gap-2 mb-4">
+      <button onclick="testEndpoint('POST','/api/auth/login',JSON.stringify({email:'admin@gympro.com',password:'Admin1234!'}))" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500/20 text-sky-300 border border-sky-500/30 hover:bg-sky-500/30 transition"><i class="fas fa-play mr-1"></i>POST /api/auth/login</button>
+      <button onclick="testEndpoint('GET','/api/usuarios')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/usuarios</button>
+      <button onclick="testEndpoint('GET','/api/membresias')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/membresias</button>
+      <button onclick="testEndpoint('GET','/api/rutinas')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/rutinas</button>
+      <button onclick="testEndpoint('GET','/api/asistencia')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/asistencia</button>
+      <button onclick="testEndpoint('GET','/api/reportes/asistencia-mensual')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/reportes/asistencia-mensual</button>
+      <button onclick="document.getElementById('api-result').classList.add('hidden')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-400 hover:bg-slate-600 transition"><i class="fas fa-eraser mr-1"></i>Limpiar</button>
+    </div>
+    <div id="api-result" class="hidden"><div class="flex items-center gap-2 mb-2"><span id="api-badge" class="px-2 py-0.5 rounded text-xs font-bold"></span><span id="api-url" class="text-xs font-mono text-slate-400"></span></div><div id="api-response" class="code-block text-xs max-h-60 overflow-y-auto"></div></div>
+    <div id="api-loading" class="hidden text-center py-4 text-slate-400"><i class="fas fa-spinner fa-spin mr-2"></i>Consultando API...</div>
+  </div>
+</section>
+</section>
+
 <section id="evidencias" class="mb-16 anim-on d2">
   <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-images text-indigo-400 mr-3"></i>Evidencias Visuales</h2>
 
@@ -400,7 +558,28 @@
   </div>
 </section>
 
+<section id="defectos" class="mb-16 anim-on d3">
+  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-bug text-indigo-400 mr-3"></i>Registro de Defectos</h2>
+  <div class="glass rounded-xl overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead><tr class="bg-slate-800 text-slate-300 text-xs uppercase tracking-wider"><th class="text-left py-3 px-4">ID</th><th class="text-left py-3 px-4">Módulo</th><th class="text-left py-3 px-4">Severidad</th><th class="text-left py-3 px-4 hidden lg:table-cell">Descripción</th><th class="text-left py-3 px-4 hidden md:table-cell">Evidencia</th><th class="text-center py-3 px-4">Estado</th></tr></thead>
+        <tbody>
+          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs font-bold text-rose-400">D-001</td><td class="py-3 px-4">Login</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-rose-500/20 text-rose-300 border border-rose-500/20">Crítica</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">CAPTCHA bypass: el captcha solo se valida en cliente (JS). POST directo a /api/auth/login autentica sin resolver el captcha.</td><td class="py-3 px-4 hidden md:table-cell"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick="openLightbox('evidencias/admin/00_login.png')"><i class="fas fa-image mr-1"></i>Ver</button></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-rose-900/30 text-rose-300 border border-rose-500/20">Abierto</span></td></tr>
+          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs text-slate-300">D-002</td><td class="py-3 px-4">Login</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-500/20 text-slate-300 border border-slate-500/20">Baja</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Cookie de sesión sin flag Secure. La aplicación corre 100% sobre HTTPS, pero el flag no está presente.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
+          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs text-slate-300">D-003</td><td class="py-3 px-4">API</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-amber-500/20 text-amber-300 border border-amber-500/20">Media</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Input malformed JSON causa HTTP 500. Enviar payload con operadores MongoDB ($ne) produce error interno. Backend es SQLite.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
+          <tr class="border-b border-slate-800 border-transparent hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs font-bold text-orange-400">D-004</td><td class="py-3 px-4">API</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-orange-500/20 text-orange-300 border border-orange-500/20">Alta</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Fuga de datos entre roles: un miembro autenticado puede acceder a /api/membresias, /api/asistencia y /api/rutinas y ver datos de todos los usuarios.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 <section id="calidad" class="mb-16 anim-on d3">
+  <div class="flex items-center gap-2 mb-4">
+    <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">F+NF</span>
+    <span class="text-xs text-slate-400">La ISO 25010 evalúa tanto la <strong class="text-slate-200">idoneidad funcional</strong> (F) como las <strong class="text-slate-200">características no funcionales</strong> (NF)</span>
+  </div>
   <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-clipboard-check text-indigo-400 mr-3"></i>Evaluación ISO/IEC 25010</h2>
 
   <div class="glass rounded-xl p-6 mb-6">
@@ -487,76 +666,6 @@
   </div>
 </section>
 
-<section id="api" class="mb-16 anim-on d3">
-  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-plug text-indigo-400 mr-3"></i>Pruebas de API REST</h2>
-
-  <div class="glass rounded-xl p-6 mb-6">
-    <div class="grid md:grid-cols-4 gap-4 text-center text-sm mb-6">
-      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-indigo-400 block">11</span>Endpoints</div>
-      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-emerald-400 block">20</span>Aserciones</div>
-      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-emerald-400 block">14</span><span class="text-emerald-400/60"> PASS</span></div>
-      <div class="p-4 rounded-lg bg-slate-800"><span class="text-2xl font-bold text-rose-400 block">6</span><span class="text-rose-400/60"> FAIL</span></div>
-    </div>
-
-    <div class="mb-6 overflow-x-auto">
-      <table class="w-full text-xs">
-        <thead><tr class="text-slate-400 border-b border-slate-700"><th class="text-left py-2 pr-3">#</th><th class="text-left py-2 pr-3">Método</th><th class="text-left py-2 pr-3">Endpoint</th><th class="text-center py-2 pr-3">Estado</th><th class="text-center py-2">Ver</th></tr></thead>
-        <tbody id="api-endpoints">
-          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">1</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-sky-500/20 text-sky-300">POST</span></td><td class="py-2 pr-3 font-mono">/api/auth/login</td><td class="text-center py-2 pr-3"><span class="text-emerald-400">✅ 200</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det1")'><i class="fas fa-chevron-down"></i></button></td></tr>
-          <tr id="det1" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs"><span class="text-emerald-400">Solicitud:</span> POST /api/auth/login<br>{<br>&nbsp;&nbsp;"email": "admin@gympro.com",<br>&nbsp;&nbsp;"password": "Admin1234!"<br>}<br><br><span class="text-emerald-400">Respuesta:</span> 200 OK<br>{<br>&nbsp;&nbsp;"success": true,<br>&nbsp;&nbsp;"user": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br>&nbsp;&nbsp;&nbsp;&nbsp;"nombre": "Admin",<br>&nbsp;&nbsp;&nbsp;&nbsp;"rol": "admin"<br>&nbsp;&nbsp;}<br>}<br><span class="text-slate-500">Set-Cookie: session=...; HttpOnly; Path=/</span></div></td></tr>
-          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">2</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/usuarios</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det2")'><i class="fas fa-chevron-down"></i></button></td></tr>
-          <tr id="det2" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs"><span class="text-rose-400">Falla en aserción:</span> Response is array<br><br>El endpoint retorna HTML (página de login) porque no se envió cookie de sesión. Para probar correctamente los endpoints protegidos se requiere autenticación previa con POST /api/auth/login.</div></td></tr>
-          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">3</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/rutinas</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det3")'><i class="fas fa-chevron-down"></i></button></td></tr>
-          <tr id="det3" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa, el servidor redirige al login devolviendo HTML en vez del JSON array esperado.</div></td></tr>
-          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">4</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/membresias</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det4")'><i class="fas fa-chevron-down"></i></button></td></tr>
-          <tr id="det4" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
-          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">5</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/asistencia</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det5")'><i class="fas fa-chevron-down"></i></button></td></tr>
-          <tr id="det5" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
-          <tr class="border-b border-slate-800"><td class="py-2 pr-3 text-slate-500">6</td><td class="py-2 pr-3"><span class="px-2 py-0.5 rounded text-xs font-bold bg-emerald-500/20 text-emerald-300">GET</span></td><td class="py-2 pr-3 font-mono">/api/reportes/asistencia-mensual</td><td class="text-center py-2 pr-3"><span class="text-rose-400">❌ 200 (HTML)</span></td><td class="text-center py-2"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick='toggleApiDetail("det6")'><i class="fas fa-chevron-down"></i></button></td></tr>
-          <tr id="det6" class="hidden"><td colspan="5" class="py-3 px-4 bg-slate-800/50"><div class="code-block text-xs">Misma causa: sin sesión activa.</div></td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="p-4 rounded-lg bg-amber-900/20 border border-amber-500/20 text-xs text-amber-300">
-      <i class="fas fa-circle-info mr-1"></i> <strong>Nota:</strong> Los 6 fallos corresponden a endpoints protegidos que retornan HTML (login) en vez de JSON array cuando se consultan sin cookie de sesión. Esto es esperable: la colección Newman no incluye autenticación previa. El resto de aserciones (códigos HTTP, headers, logout) pasaron correctamente.
-    </div>
-  </div>
-
-  <div class="glass rounded-xl p-6">
-    <h3 class="font-semibold mb-4"><i class="fas fa-bolt mr-2 text-emerald-400"></i>Probar API en vivo</h3>
-    <p class="text-xs text-slate-400 mb-4">Haz clic para probar los endpoints directamente desde el informe. Se realizan peticiones reales a la API de GymPro.</p>
-    <div class="flex flex-wrap gap-2 mb-4">
-      <button onclick="testEndpoint('POST','/api/auth/login',JSON.stringify({email:'admin@gympro.com',password:'Admin1234!'}))" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-sky-500/20 text-sky-300 border border-sky-500/30 hover:bg-sky-500/30 transition"><i class="fas fa-play mr-1"></i>POST /api/auth/login</button>
-      <button onclick="testEndpoint('GET','/api/usuarios')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/usuarios</button>
-      <button onclick="testEndpoint('GET','/api/membresias')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/membresias</button>
-      <button onclick="testEndpoint('GET','/api/rutinas')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/rutinas</button>
-      <button onclick="testEndpoint('GET','/api/asistencia')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/asistencia</button>
-      <button onclick="testEndpoint('GET','/api/reportes/asistencia-mensual')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 hover:bg-emerald-500/30 transition"><i class="fas fa-play mr-1"></i>GET /api/reportes/asistencia-mensual</button>
-      <button onclick="document.getElementById('api-result').classList.add('hidden')" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-700 text-slate-400 hover:bg-slate-600 transition"><i class="fas fa-eraser mr-1"></i>Limpiar</button>
-    </div>
-    <div id="api-result" class="hidden"><div class="flex items-center gap-2 mb-2"><span id="api-badge" class="px-2 py-0.5 rounded text-xs font-bold"></span><span id="api-url" class="text-xs font-mono text-slate-400"></span></div><div id="api-response" class="code-block text-xs max-h-60 overflow-y-auto"></div></div>
-    <div id="api-loading" class="hidden text-center py-4 text-slate-400"><i class="fas fa-spinner fa-spin mr-2"></i>Consultando API...</div>
-  </div>
-</section>
-
-<section id="defectos" class="mb-16 anim-on d3">
-  <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-bug text-indigo-400 mr-3"></i>Registro de Defectos</h2>
-  <div class="glass rounded-xl overflow-hidden">
-    <div class="overflow-x-auto">
-      <table class="w-full text-sm">
-        <thead><tr class="bg-slate-800 text-slate-300 text-xs uppercase tracking-wider"><th class="text-left py-3 px-4">ID</th><th class="text-left py-3 px-4">Módulo</th><th class="text-left py-3 px-4">Severidad</th><th class="text-left py-3 px-4 hidden lg:table-cell">Descripción</th><th class="text-left py-3 px-4 hidden md:table-cell">Evidencia</th><th class="text-center py-3 px-4">Estado</th></tr></thead>
-        <tbody>
-          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs font-bold text-rose-400">D-001</td><td class="py-3 px-4">Login</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-rose-500/20 text-rose-300 border border-rose-500/20">Crítica</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">CAPTCHA bypass: el captcha solo se valida en cliente (JS). POST directo a /api/auth/login autentica sin resolver el captcha.</td><td class="py-3 px-4 hidden md:table-cell"><button class="text-indigo-400 hover:text-indigo-300 text-xs" onclick="openLightbox('evidencias/admin/00_login.png')"><i class="fas fa-image mr-1"></i>Ver</button></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-rose-900/30 text-rose-300 border border-rose-500/20">Abierto</span></td></tr>
-          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs text-slate-300">D-002</td><td class="py-3 px-4">Login</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-slate-500/20 text-slate-300 border border-slate-500/20">Baja</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Cookie de sesión sin flag Secure. La aplicación corre 100% sobre HTTPS, pero el flag no está presente.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
-          <tr class="border-b border-slate-800 hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs text-slate-300">D-003</td><td class="py-3 px-4">API</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-amber-500/20 text-amber-300 border border-amber-500/20">Media</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Input malformed JSON causa HTTP 500. Enviar payload con operadores MongoDB ($ne) produce error interno. Backend es SQLite.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
-          <tr class="border-b border-slate-800 border-transparent hover:bg-slate-800/30 transition"><td class="py-3 px-4 font-mono text-xs font-bold text-orange-400">D-004</td><td class="py-3 px-4">API</td><td class="py-3 px-4"><span class="px-2 py-0.5 rounded text-xs font-medium bg-orange-500/20 text-orange-300 border border-orange-500/20">Alta</span></td><td class="py-3 px-4 hidden lg:table-cell text-xs text-slate-400">Fuga de datos entre roles: un miembro autenticado puede acceder a /api/membresias, /api/asistencia y /api/rutinas y ver datos de todos los usuarios.</td><td class="py-3 px-4 hidden md:table-cell"><span class="text-xs text-slate-500">—</span></td><td class="text-center py-3 px-4"><span class="px-2 py-0.5 rounded text-xs bg-slate-700 text-slate-300">Abierto</span></td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
 <section id="conclusiones" class="mb-16 anim-on d4">
   <h2 class="text-2xl font-bold mb-8 flex items-center"><i class="fas fa-list-check text-indigo-400 mr-3"></i>Conclusiones y Recomendaciones</h2>
   <div class="grid md:grid-cols-2 gap-6 mb-6">
@@ -604,6 +713,7 @@
   </div>
 </section>
 
+
 </main>
 
 <footer class="glass-dark border-t border-slate-800 py-10">
@@ -611,7 +721,8 @@
     <p class="mb-2"><i class="fas fa-shield-alt mr-2 text-indigo-400"></i>Informe de Aseguramiento de Calidad de Software — GymPro</p>
     <p>Generado el 20 de junio de 2026 · Sistema: <code class="text-indigo-300">gestion-gympro.up.railway.app</code></p>
     <p class="mt-1 text-xs">ISO/IEC 25010:2011 — SQuaRE · Selenium WebDriver 4.45 · Newman 6.2.2 · JMeter 5.6.3 · OWASP ZAP 2.17.0</p>
-    <p class="mt-3 text-xs text-slate-600">Dashboard interactivo con datos reales — las pruebas de API en vivo consultan el sistema directamente</p>
+    <p class="mt-2 text-xs text-slate-500"><i class="fas fa-users mr-1"></i> <strong>Equipo evaluador:</strong> Julio Cesar Amaya Amaya, Jonathan Enrique Iguaran Pimienta</p>
+    <p class="mt-1 text-xs text-slate-600">Dashboard interactivo con datos reales — las pruebas de API en vivo consultan el sistema directamente</p>
     <p class="mt-4"><a href="https://github.com/Stirven0/GYMPRO_SQA" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition text-xs font-medium"><i class="fab fa-github text-lg"></i> Ver repositorio fuente — rama principal</a></p>
   </div>
 </footer>
@@ -665,9 +776,12 @@ function openLightbox(src) {
 }
 
 function switchTab(tabId, btn) {
-  document.querySelectorAll('.tab-btn').forEach(b => { b.className = 'tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30'; });
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.className = 'tab-btn px-4 py-2 rounded-lg text-xs font-medium border border-slate-700 text-slate-400 hover:border-indigo-500/30';
+  });
   document.querySelectorAll('.tab-content').forEach(c => c.classList.add('hidden'));
-  btn.className = 'tab-btn active px-4 py-2 rounded-lg text-xs font-medium border border-indigo-500/30 text-indigo-300';
+  const isFunc = tabId === 'funcional-tab';
+  btn.className = 'tab-btn active px-4 py-2 rounded-lg text-xs font-medium border ' + (isFunc ? 'border-emerald-500/30 text-emerald-300' : 'border-indigo-500/30 text-indigo-300');
   document.getElementById(tabId).classList.remove('hidden');
 }
 
